@@ -3,59 +3,14 @@
 	|fmodmusicTemplate
 	|partTemplate
 	|mainTemplate
-	|showHitBox
-	+podultraplus
-		|fd_fmod
-		|ts_main
-		|ts_pub_brg
-		|blockAnime
-		|ts_block_brg
-		|ts_block_brg_appear
-		|ts_brgbase
-		|ts_brg_bg
-		|ts_rise_bg_brg
-		|ts_fg
-		|ts_3d_bg_brg
-		+p1
-			|ts_p1
-			|ts_p1_b1
-			|ts_p1_b2
-	+first dreamer
-		|barragebase
-		|objfmod
-		|objmain
-		|bg1obj
-		|bg2obj
-		|obj_dotkid
-		|bgbrg
-		|bg3obj
-		|objdusk
+	|brgbase
+	+3rdavenue
+		|_3rdAv_fmod
+		|_3rdAv_main
 		+p1
 			|p1
-			|p1bspin1
-			|p1brice1
-			|p1brice2
-			|p1bcurve
-		+p2
-			|p2
-			|p2bspin1
-			|p2bbounce
-			|p2blightball
-			|p2bootama
-			|p2blaser
-			|p2bsuddenstoplightball
-			|p2blightball2laser
-			|p2bgravity
-+old
-	|barragebaseW9
-	|brgend
-	|barragebase2
-	|HpBar
-	|HpBarbg
-	|test
-	|bg2
-	|main
-	|w1
+			|p1b1
+			|p1b2
 |block
 +savePoint
 	|savePointMedium

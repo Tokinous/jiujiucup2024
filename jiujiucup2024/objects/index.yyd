@@ -103,14 +103,11 @@ objSmoothView
 
 
 
-main
 
 
 
-test
 
 
-bg2
 
 
 
@@ -125,10 +122,7 @@ bg2
 
 
 
-w1
 
-barragebase2
-brgend
 
 
 
@@ -237,7 +231,6 @@ brgend
 
 
 
-HpBar
 
 
 
@@ -245,7 +238,6 @@ HpBar
 
 
 
-HpBarbg
 
 
 
@@ -289,7 +281,15 @@ HpBarbg
 
 
 
-barragebaseW9
+
+
+
+
+
+
+
+
+
 
 
 
@@ -367,42 +367,34 @@ mainTemplate
 
 
 
-fd_fmod
-ts_main
-ts_pub_brg
-ts_brgbase
-
-ts_p1_b1
-ts_p1
-ts_block_brg
-ts_block_brg_appear
-
-blockAnime
-ts_p1_b2
-
-ts_fg
 
 
 
-obj_dotkid
+brgbase
 
 
-ts_brg_bg
-showHitBox
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 testObj
 
 
 
-ts_3d_bg_brg
-
-
-
-
-
-
-ts_rise_bg_brg
 
 
 
@@ -412,27 +404,40 @@ ts_rise_bg_brg
 
 
 
-bg1obj
-bg2obj
-objfmod
-objmain
-p1
-barragebase
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 objScreenFlashEx
-p1bspin1
-p1brice1
-p1bcurve
-p1brice2
 
-objdusk
-p2
-p2bbounce
-p2bspin1
-p2blightball
-p2bootama
-p2blaser
-bg3obj
-bgbrg
-p2bsuddenstoplightball
-p2blightball2laser
-p2bgravity
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_3rdAv_main
+_3rdAv_fmod
+p1
+p1b1
+p1b2

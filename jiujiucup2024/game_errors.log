@@ -1,0 +1,8 @@
+ERROR in
+action number 1
+at time step 92
+of time line tl_p1:
+
+Creating instance for non-existing object: 6
+
+

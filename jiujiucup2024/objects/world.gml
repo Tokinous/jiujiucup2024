@@ -307,7 +307,6 @@ if(pauseon == false){
         //make up for the frame that player presses 'R'
         global.timestep += 2;
         saveDeathTime();
-        saveBestRecord();
 
         with(player){
             instance_destroy();
