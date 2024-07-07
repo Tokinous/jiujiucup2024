@@ -1,0 +1,23 @@
++init
+	|rInit
+	|rTitle
+	|rMenu
+	|rLoad
+	|rOptions
+	|rSelectStage
++example
+	|rHub
+	|rAvoidance
+	|rtest
+	|rEnd
+	+rPratice
+		|r_p1
+		|r_p2
+		|r_p3
+		|r_p4
+		|r_p5
+		|r_p6
+		|r_p7
+|rTemplate
++endingrooms
+	|rEnd2

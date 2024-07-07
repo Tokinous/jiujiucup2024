@@ -1,0 +1,39 @@
++masks, world
+	|maskNothing
+	|sprGAMEOVER
+	|sprSave
+	|sprSaveMedium
+	|sprSaveVhard
+	|sprWarp
+	|sprcamera
+	|sprplayerstart
+	|sprPause
+	|dotkidspr
++player
+	|maskPlayer
+	|sprBlood
+	|sprBullet
+	|sprPlayerFall
+	|sprPlayerIdle
+	|sprPlayerJump
+	|sprPlayerRunning
+	|sprPlayerSliding
+	|sprPlayerBack
+	|sprPlayerLadderUpDown
+	|sprPlayerLadderLeftRight
+	|sprWallJumpL
+	|sprWallJumpR
++buttons
+	|sprButton
+	|sprButtonShoot
+	|sprButtonLeft
+	|sprButtonJump
+	|sprButtonRight
+	|sprVolumeBar
+	|sprMusic
+	|sprSound
+|block_default
++brg_spr
+	|sprBrg1
+|block_avo
+|spr_dk
