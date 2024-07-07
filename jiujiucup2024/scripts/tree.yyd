@@ -235,36 +235,11 @@
 	|SelectColor_ts
 	|outViewDontDes
 +avoidance_func
-	|manageGlobalBrgSpr
 	|DrawBlocks
 	|StopAllAlarm
 	|IsInView
-	|SetBackgroundBrg
-	+p1
-		|slide_p1
-	+p2
-		|dualCircle
-		|dualPolygon
-		|dualCircle_aim
-		|skyCorrupt_line_p2
-		|skyCorrupt_line_side_p2
-		|skyCorrupt_rect_p2
-		|centerRect
-		|helix_p2
-		|gushagusha
-		|helixChair
-		|bgchair_p2
-		|corrupt_p2
 	+3dModule
 		|Calc2D
 		|CalcMatrix
 		|CalcNewPos
-	+p3
-		|BgManage_p3
-		|hitome_p3
-	|destroyByDistance
-	|SetBgState
-	|SprDirDontFollow
-	|OutViewDontDestroy
-	+first dreamer
-		|p2createlaser
+	|DestroyByDistance

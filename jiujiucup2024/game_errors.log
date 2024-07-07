@@ -1,0 +1,9 @@
+FATAL ERROR in
+action number 1
+of  Step Event
+for object ts_p1:
+
+COMPILATION ERROR in code actionError in code at line 31:   
+            BlockDisappear();               ^at position 14: Unknown function or script: BlockDisappear
+
+

@@ -19,11 +19,11 @@ if(1 == argument4)
 
 for(i = 0; i < argument3 - 2; i+=1)
 {
-    if("h" == argument2)
+    if(BLOCK_DRAW_DIRECTION_HORIZONAL == argument2)
     {
         xx += 32;
     }
-    else if("v" == argument2)
+    else if(BLOCK_DRAW_DIRECTION_VERTICAL == argument2)
     {
         yy += 32;
     }
@@ -32,11 +32,11 @@ for(i = 0; i < argument3 - 2; i+=1)
     lineBlock.sprite_index = block_avo;
     lineBlock.image_speed = 0;
 
-    if("h" == argument2)
+    if(BLOCK_DRAW_DIRECTION_HORIZONAL == argument2)
     {
         lineBlock.image_index = 1;
     }
-    else if("v" == argument2)
+    else if(BLOCK_DRAW_DIRECTION_VERTICAL == argument2)
     {
         lineBlock.image_index = 2;
     }
@@ -47,11 +47,11 @@ for(i = 0; i < argument3 - 2; i+=1)
     }
 }
 
-    if("h" == argument2)
+    if(BLOCK_DRAW_DIRECTION_HORIZONAL == argument2)
     {
         xx += 32;
     }
-    else if("v" == argument2)
+    else if(BLOCK_DRAW_DIRECTION_VERTICAL == argument2)
     {
         yy += 32;
     }
@@ -60,8 +60,3 @@ endBlock = instance_create(xx, yy, block);
 endBlock.sprite_index = block_avo;
 endBlock.image_speed = 0;
 endBlock.image_index = 0;
-
-if(1 == argument4)
-{
-    endBlock.sp = 1;
-}

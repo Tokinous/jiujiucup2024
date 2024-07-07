@@ -266,43 +266,43 @@ dirCurToPlayer
 DebugMusicPart
 SelectColor_ts
 outViewDontDes
-slide_p1
+
 DrawBlocks
 
 
-dualCircle
-skyCorrupt_line_p2
-skyCorrupt_rect_p2
-skyCorrupt_line_side_p2
+
+
+
+
 StopAllAlarm
-centerRect
-dualCircle_aim
-helix_p2
-
-gushagusha
-
-SetBackgroundBrg
 
 
-helixChair
+
+
+
+
+
+
+
+
 
 Calc2D
 CalcMatrix
 CalcNewPos
 IsInView
 
-destroyByDistance
-bgchair_p2
-manageGlobalBrgSpr
-BgManage_p3
-hitome_p3
+DestroyByDistance
+
+
+
+
 polygonEx
-dualPolygon
-corrupt_p2
-SetBgState
+
+
+
 screenFlashEx
 
-OutViewDontDestroy
-SprDirDontFollow
-p2createlaser
+
+
+
 
