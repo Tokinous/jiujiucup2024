@@ -32,7 +32,7 @@ spikeSprite
 screenShake
 screenFlash
 createShadow
-setScale
+SetScale
 
 
 
@@ -75,7 +75,7 @@ cleanmem
 
 
 
-polygon
+Polygon
 
 
 
@@ -254,14 +254,14 @@ audio_playmusic
 audio_stopmusic
 audio_loopmusic
 audio_resumemusic
-createMoveOne
+CreateMoveOne
 createBlock
 createCircle
 
 resetAllGlobal
-setBaseBrgProp
+
 clearAllBrg
-createDusk
+
 dirCurToPlayer
 DebugMusicPart
 SelectColor_ts
@@ -306,3 +306,6 @@ screenFlashEx
 
 
 
+CalcCircleX
+CalcCircleY
+P1FiveSquare

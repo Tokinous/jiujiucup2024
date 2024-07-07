@@ -36,7 +36,7 @@
 	|screenFlash
 	|screenFlashEx
 	|createShadow
-	|setScale
+	|SetScale
 +controls
 	|controls_init
 	|controls_update
@@ -221,15 +221,13 @@
 	|audio_loopmusic
 	|audio_resumemusic
 +new_funcs
-	|createMoveOne
-	|polygon
+	|CreateMoveOne
+	|Polygon
 	|polygonEx
 	|createBlock
 	|createCircle
 	|resetAllGlobal
-	|setBaseBrgProp
 	|clearAllBrg
-	|createDusk
 	|dirCurToPlayer
 	|DebugMusicPart
 	|SelectColor_ts
@@ -243,3 +241,10 @@
 		|CalcMatrix
 		|CalcNewPos
 	|DestroyByDistance
++runtime functions
+	+p1
+		|P1FiveSquare
++quickcalc functions
+	+QuickClac
+		|CalcCircleX
+		|CalcCircleY

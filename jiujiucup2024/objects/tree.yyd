@@ -3,12 +3,14 @@
 	|fmodmusicTemplate
 	|partTemplate
 	|mainTemplate
-	|ts_brgbase
+	|brgbase
 	+3rdavenue
 		|_3rdAv_fmod
 		|_3rdAv_main
 		+p1
 			|p1
+			|p1b1
+			|p1b2
 |block
 +savePoint
 	|savePointMedium
