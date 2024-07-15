@@ -35,5 +35,6 @@
 |block_default
 +brg_spr
 	|sprBrg1
+	|sprbrglaser
 |block_avo
 |spr_dk

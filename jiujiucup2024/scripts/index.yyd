@@ -260,7 +260,7 @@ createCircle
 
 resetAllGlobal
 
-clearAllBrg
+ClearAllBrg
 
 dirCurToPlayer
 DebugMusicPart
@@ -309,3 +309,23 @@ screenFlashEx
 CalcCircleX
 CalcCircleY
 P1FiveSquare
+P1ThreeCircle
+P1SingleCircle
+P1BoomAnchor
+CalcLineX
+CalcLineY
+P1SquareLine
+
+P1EightTriangle
+ParamChange
+CreateParamChangeNotice
+CameraRect
+P1FadeInFrontG
+P1OutCircle
+
+CalcArcX
+CalcArcY
+P1SingleArc
+P1OutsideArcCircle
+CalcCircleXAsync
+CalcCircleYAsync

@@ -14,6 +14,10 @@ _maxInstNum = ' maxInst: ' + string(maxNum);
 _instNum = ' nums: ' + string(instance_number(all));
 _playerX = ' X: ';
 _playerY = ' Y: ';
+_cameraInfo = ' Camera Info: '
++ '[' + string(view_xview[0]) + ',' + string(view_yview[0]) + ']'
++ '[' + string(view_xview[0] + view_wview[0]) + ',' + string(view_yview[0] + view_hview[0]) + ']';
+
 if instance_exists(player)
 {
     _playerX += string(player.x);
@@ -90,15 +94,20 @@ applies_to=self
 global.STEP=realtime;
 realtime+=1;
 
+_curStep = 'curStep: ' + string(round(timeline_position));
+_isPlaying = ' IsPlaying: ' + string(FMODInstanceIsPlaying(global.BGMHandler));
+
 if(instance_number(all) > maxNum)
     maxNum = instance_number(all);
 
-_curStep = 'curStep: ' + string(round(timeline_position));
-_isPlaying = ' IsPlaying: ' + string(FMODInstanceIsPlaying(global.BGMHandler));
-_maxInstNum = ' maxInst: ' + string(maxNum);
-_instNum = ' nums: ' + string(instance_number(all));
+_maxInstNum = ' maxInst:' + string(maxNum);
+_instNum = ' nums:' + string(instance_number(all));
 _playerX = ' X: ';
 _playerY = ' Y: ';
+_cameraInfo = ' Camera:'
++ '[' + string(view_xview[0]) + ',' + string(view_yview[0]) + ']'
++ '[' + string(view_xview[0] + view_wview[0]) + ',' + string(view_yview[0] + view_hview[0]) + ']';
+
 if instance_exists(player)
 {
     _playerX += string(player.x);
@@ -144,13 +153,13 @@ applies_to=self
 draw_set_color(c_yellow);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
-draw_set_font(font12);
+draw_set_font(fontDefault);
 draw_set_alpha(1);
 
 draw_text_transformed(
     view_xview[0] + 64,
     view_yview[0] + 64,
-    _curStep + _isPlaying + _maxInstNum + _instNum + _playerX + _playerY,
+    _curStep + _maxInstNum + _instNum + _cameraInfo,
     view_wview[0]/800,
     view_hview[0]/608,
     0
