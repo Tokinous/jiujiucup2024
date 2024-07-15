@@ -187,6 +187,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
+/*
 if(place_meeting(x,y,roomChanger) == false){
     killPlayer();
 }

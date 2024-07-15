@@ -1,6 +1,6 @@
 {
     //game title
-    global.game_title = "I Wanna Be The First Dreamer";
+    global.game_title = "I Wanna Be The 3rd Avenue";
     //first room
     global.first_stage = rHub;
     //lite mode (set to true for convenient testing & debugging, set to false when you want release your game)

@@ -11,13 +11,13 @@ if(speed <= 0.5)
     var scale;
     scale = image_xscale;
 
-    scale += (0 - scale)/10;
+    scale += (0 - scale)/5;
     SetScale(scale, scale);
 
     if(scale <= 0.1)
         instance_destroy();
 }
-#define Other_0
+#define Other_40
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=203

@@ -1,3 +1,7 @@
 +tl_3rd_avenue
 	|tl_main
-	|tl_p1
+	+p1
+		|tl_p1_main
+		|tl_p1_sub
+	+p2
+		|tl_p2_main

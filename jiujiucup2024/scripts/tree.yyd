@@ -227,7 +227,7 @@
 	|createBlock
 	|createCircle
 	|resetAllGlobal
-	|clearAllBrg
+	|ClearAllBrg
 	|dirCurToPlayer
 	|DebugMusicPart
 	|SelectColor_ts
@@ -241,10 +241,31 @@
 		|CalcMatrix
 		|CalcNewPos
 	|DestroyByDistance
+	|CreateParamChangeNotice
+	|ParamChange
+	+TokinousCamera
+		|CameraRect
 +runtime functions
 	+p1
 		|P1FiveSquare
+		|P1EightTriangle
+		|P1SquareLine
+		|P1ThreeCircle
+		|P1SingleCircle
+		|P1BoomAnchor
+		|P1FadeInFrontG
+		|P1OutCircle
+		|P1SingleArc
+		|P1OutsideArcCircle
 +quickcalc functions
 	+QuickClac
-		|CalcCircleX
-		|CalcCircleY
+		+basic
+			|CalcCircleX
+			|CalcCircleXAsync
+			|CalcCircleY
+			|CalcCircleYAsync
+			|CalcLineY
+			|CalcLineX
+		+advanced
+			|CalcArcX
+			|CalcArcY

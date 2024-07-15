@@ -4,13 +4,25 @@
 	|partTemplate
 	|mainTemplate
 	|brgbase
+	|TokinousCamera
 	+3rdavenue
 		|_3rdAv_fmod
 		|_3rdAv_main
+		|show_param_change
 		+p1
 			|p1
+			|p1sub1
 			|p1b1
+			|p1b12
 			|p1b2
+			|p1bAnchor
+			|p1bCircle
+			|p1bCircleOutside
+			|p1bLaser
+			|p1bSquareLine
+			|p1FrontGFadeIn
+		+p2
+			|p2
 |block
 +savePoint
 	|savePointMedium
