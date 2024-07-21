@@ -44,7 +44,7 @@ with p1b12 instance_destroy();
 with p1b2 instance_destroy();
 with p1bCircle instance_destroy();
 
-insaneFlag = 1;
+insaneFlag += 1;
 #define 737
 /*"/*'/**//* YYD ACTION
 lib_id=1

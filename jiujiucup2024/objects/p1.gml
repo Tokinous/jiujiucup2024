@@ -18,7 +18,7 @@ listAnchor = ds_list_create();
 
 anchorIndex = 0;
 
-insaneFlag = 0;
+insaneFlag = 1;
 
 //p1GlobOffset = -45;
 #define Alarm_0

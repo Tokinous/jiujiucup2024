@@ -22,7 +22,14 @@
 			|p1bSquareLine
 			|p1FrontGFadeIn
 		+p2
+			|p2bDiscrete
 			|p2
+			|p2bCircleToPlayer
+			|p2bCurve
+			|p2bBlock
+			|p2bCycloid
+			|p2bCircle
+		|bgBreath
 |block
 +savePoint
 	|savePointMedium

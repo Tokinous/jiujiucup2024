@@ -15,7 +15,7 @@ applies_to=self
 */
 flag = 1;
 
-speed = 2.5;
+speed = 2.5 * p1.insaneFlag;
 
 direction += 90;
 #define Step_0
