@@ -13,7 +13,10 @@ destCenterY = 0;
 phase = 0;
 destPhase = 0;
 
+phaseSpd = 0;
+
 r = 0;
+destR = 0;
 
 type = 0;
 
@@ -33,30 +36,19 @@ applies_to=self
 */
 var param;
 
-param = 20;
+param = 70;
 
-centerX += (destCenterX - centerX)/param;
-centerY += (destCenterY - centerY)/param;
-
-if(flag == 1)
+if(abs((destPhase - phase)/param) > abs(phaseSpd))
 {
     phase += (destPhase - phase)/param;
-
-    if(abs(destPhase - phase)/param <= 1 && type == 0)
-        instance_destroy();
+}
+else
+{
+    destPhase = phase;
+    phase += phaseSpd;
 }
 
 x = CalcCircleX(centerX, centerY, r, 1, 1, phase);
 y = CalcCircleY(centerX, centerY, r, 1, 1, phase);
 
-if(1 == type)
-{
-    r -= 2 * p1.insaneFlag;
-}
-#define Other_40
-/*"/*'/**//* YYD ACTION
-lib_id=1
-action_id=203
-applies_to=self
-invert=0
-*/
+r += (destR - r) / param;

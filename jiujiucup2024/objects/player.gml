@@ -50,6 +50,14 @@ if(room != rSelectStage && room != rOptions){
 
 maxHP = 100;
 curHP = maxHP;
+
+playerMoveType = PLAYER_MOVE_TYPE_DEFAULT;
+
+//playerMoveType = PLAYER_MOVE_TYPE_DISCRETE;
+
+//discrete move
+discreteIdleCount = 0;
+discreteIdleInterrupt = 24;
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -69,16 +77,30 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-///Player movements
-if(global.frozen2 == 0){
-    playerMove();
-    playerWallJump();
-    playerMisc();
-}
-else{
-    gravity = 0;
-    image_speed = 0;
-    speed = 0;
+switch(playerMoveType)
+{
+    case PLAYER_MOVE_TYPE_DEFAULT:
+        {
+            ///Player movements
+            if(global.frozen2 == 0){
+                playerMove();
+                playerWallJump();
+                playerMisc();
+            }
+            else{
+                gravity = 0;
+                image_speed = 0;
+                speed = 0;
+            }
+        }
+        break;
+    case PLAYER_MOVE_TYPE_DISCRETE:
+        {
+            PlayerDiscreteMove();
+        }
+        break;
+    default:
+        break;
 }
 #define Step_2
 /*"/*'/**//* YYD ACTION
@@ -86,50 +108,69 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-///Checking for Slopes
-playerSlope();
+switch(playerMoveType)
+{
+    case PLAYER_MOVE_TYPE_DEFAULT:
+        {
+            ///Checking for Slopes
+            playerSlope();
+        }
+        break;
+    default:
+        break;
+}
 #define Collision_block
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-///collision with blocks
-//horizontal
-if(place_free(x+hspeed,y) == false){
-    if(hspeed <= 0){
-        move_contact_solid(180,abs(hspeed));
-    }
-    if(hspeed > 0){
-        move_contact_solid(0,abs(hspeed));
-    }
-    hspeed = 0;
-}
-//vertical
-if(place_free(x,y+vspeed) == false){
-    if(global.reverse){
-        if(vspeed <= 0){
-            move_contact_solid(90,abs(vspeed));
-            curJumps=1;
+switch(playerMoveType)
+{
+    case PLAYER_MOVE_TYPE_DEFAULT:
+        {
+            ///collision with blocks
+            //horizontal
+            if(place_free(x+hspeed,y) == false){
+                if(hspeed <= 0){
+                    move_contact_solid(180,abs(hspeed));
+                }
+                if(hspeed > 0){
+                    move_contact_solid(0,abs(hspeed));
+                }
+                hspeed = 0;
+            }
+            //vertical
+            if(place_free(x,y+vspeed) == false){
+                if(global.reverse){
+                    if(vspeed <= 0){
+                        move_contact_solid(90,abs(vspeed));
+                        curJumps=1;
+                    }
+                    if(vspeed > 0){
+                        move_contact_solid(270,abs(vspeed));
+                    }
+                }
+                else{
+                    if(vspeed <= 0){
+                        move_contact_solid(90,abs(vspeed));
+                    }
+                    if(vspeed > 0){
+                        move_contact_solid(270,abs(vspeed));
+                        curJumps=1;
+                    }
+                }
+                vspeed = 0;
+                gravity = 0;
+            }
+            if (place_free(x+hspeed,y+vspeed) == false){
+                hspeed=0;
+            }
+
         }
-        if(vspeed > 0){
-            move_contact_solid(270,abs(vspeed));
-        }
-    }
-    else{
-        if(vspeed <= 0){
-            move_contact_solid(90,abs(vspeed));
-        }
-        if(vspeed > 0){
-            move_contact_solid(270,abs(vspeed));
-            curJumps=1;
-        }
-    }
-    vspeed = 0;
-    gravity = 0;
-}
-if (place_free(x+hspeed,y+vspeed) == false){
-    hspeed=0;
+        break;
+    default:
+        break;
 }
 #define Collision_platform
 /*"/*'/**//* YYD ACTION

@@ -94,14 +94,16 @@ applies_to=self
 global.STEP=realtime;
 realtime+=1;
 
-_curStep = 'curStep: ' + string(round(timeline_position));
-_isPlaying = ' IsPlaying: ' + string(FMODInstanceIsPlaying(global.BGMHandler));
+_curStep = 'CurStep[' + string(round(global.STEP)) + ']';
+_isPlaying = ' IsPlaying[' + string(FMODInstanceIsPlaying(global.BGMHandler)) + ']';
+
+_playerHP = ' Player HP[' + string(player.curHP) + ']';
 
 if(instance_number(all) > maxNum)
     maxNum = instance_number(all);
 
-_maxInstNum = ' maxInst:' + string(maxNum);
-_instNum = ' nums:' + string(instance_number(all));
+_maxInstNum = ' maxInst[' + string(maxNum) + ']';
+_instNum = ' nums[' + string(instance_number(all)) + ']';
 _playerX = ' X: ';
 _playerY = ' Y: ';
 _cameraInfo = ' Camera:'
@@ -118,7 +120,7 @@ else
     _playerX += string(0);
     _playerY += string(0);
 }
-_curFps = ' FPS: ' + string(fps) + '/50';
+_curFps = ' FPS[' + string(fps) + '/50]';
 #define Step_1
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -159,7 +161,7 @@ draw_set_alpha(1);
 draw_text_transformed(
     view_xview[0] + 64,
     view_yview[0] + 64,
-    _curStep + _maxInstNum + _instNum + _cameraInfo,
+    _curStep + _playerHP + _maxInstNum + _instNum + _cameraInfo + _curFps,
     view_wview[0]/800,
     view_hview[0]/608,
     0

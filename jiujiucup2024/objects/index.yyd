@@ -452,3 +452,11 @@ TokinousCamera
 p1FrontGFadeIn
 p1bCircleOutside
 p2
+p2bCircleToPlayer
+
+p2bCurve
+bgBreath
+p2bBlock
+p2bCycloid
+p2bCircle
+p2bDiscrete

@@ -329,3 +329,9 @@ P1SingleArc
 P1OutsideArcCircle
 CalcCircleXAsync
 CalcCircleYAsync
+PlayerDiscreteMove
+P2GenerateCircleToPlayer
+P2Create
+CreateBackGround
+P2CreateRunningBlockBrg
+P2CreateDiamondCircle

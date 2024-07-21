@@ -9,6 +9,8 @@
 	|playerMisc
 	|outsideRoom
 	|outsideView
+	+special move
+		|PlayerDiscreteMove
 +system
 	|setGlobals
 	|loadGame
@@ -257,6 +259,12 @@
 		|P1OutCircle
 		|P1SingleArc
 		|P1OutsideArcCircle
+	+p2
+		|P2GenerateCircleToPlayer
+		|P2Create
+		|P2CreateRunningBlockBrg
+		|P2CreateDiamondCircle
+	|CreateBackGround
 +quickcalc functions
 	+QuickClac
 		+basic
