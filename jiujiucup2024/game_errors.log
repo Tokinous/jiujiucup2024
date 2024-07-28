@@ -1,9 +1,8 @@
 ERROR in
 action number 1
-of  Step Event
-for object p2:
+of Draw Event
+for object brgbase:
 
-Error in code at line 18:   
-            400 + dr*cos(degtorad(cycloidOffset + 2*cycloidPhase + dir*(cycloidR/cycloidr + cycloidMode)))+(cycloidR + cycloidMode * cycloidr)*cos(degtorad(cycloidPhase + dir)),                                                                                    ^at position 83: Division by 0.
+Trying to draw non-existing sprite.
 
 

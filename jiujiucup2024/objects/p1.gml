@@ -21,6 +21,13 @@ anchorIndex = 0;
 insaneFlag = 1;
 
 //p1GlobOffset = -45;
+#define Destroy_0
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+ds_list_destroy(listAnchor);
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -39,4 +46,11 @@ invert=0
 arg0=p1sub1
 arg1=0
 arg2=0
+*/
+#define KeyPress_82
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=203
+applies_to=self
+invert=0
 */

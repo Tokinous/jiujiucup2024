@@ -89,7 +89,8 @@ if(vspeed*yflag > maxVspeed){
 //shooting and jumping
 if(global.frozen == false){
     playerShoot();
-    playerJump();
+    if(maxJumps > 0)
+        playerJump();
     if(global.enable_jump_cancel && keyboard_check_released(global.jumpbutton) && yflag*vspeed < 0){
         vspeed *= 0.45;
     }

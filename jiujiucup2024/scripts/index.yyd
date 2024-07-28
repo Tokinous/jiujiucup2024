@@ -335,3 +335,11 @@ P2Create
 CreateBackGround
 P2CreateRunningBlockBrg
 P2CreateDiamondCircle
+P2MoveByDiscrete
+CreateScreenBackGround
+DrawBolcksDefault
+BarrageColorManage
+BarrageColorChange
+CameraRotate
+P2KickTheDanceFloor
+MoveToGrid

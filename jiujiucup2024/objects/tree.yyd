@@ -8,6 +8,8 @@
 	+3rdavenue
 		|_3rdAv_fmod
 		|_3rdAv_main
+		|bgScreen
+		|colorManager
 		|show_param_change
 		+p1
 			|p1
@@ -29,7 +31,11 @@
 			|p2bBlock
 			|p2bCycloid
 			|p2bCircle
+			|p2bDiscreteBorder
+			|p2bPub
 		|bgBreath
+		+p3
+			|p3
 |block
 +savePoint
 	|savePointMedium
@@ -82,3 +88,4 @@
 	|objScreenFlashEx
 	|objShadow
 	|objSmoothView
+	|objErrorDot

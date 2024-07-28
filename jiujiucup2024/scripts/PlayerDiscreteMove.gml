@@ -89,3 +89,5 @@ switch(discreteMove)
         break;
 
 }
+
+image_speed = 0.5;

@@ -29,10 +29,12 @@ grav = 0.4;
 //maximum speed when falling
 maxVspeed = 9;
 //reverse gravity
-if(global.reverse == 0){
+if(global.reverse == 0)
+{
     yflag = 1;
 }
-if(global.reverse == 1){
+if(global.reverse == 1)
+{
     yflag = -1;
     y -= 4;
     curJumps = 1;
@@ -40,8 +42,10 @@ if(global.reverse == 1){
 image_yscale = yflag;
 image_speed = 0.2;
 //save game when playing for the 1st time
-if(room != rSelectStage && room != rOptions){
-    if(file_exists(global.saving_directory+"SaveData"+string(global.savenum)) == false){
+if(room != rSelectStage && room != rOptions)
+{
+    if(file_exists(global.saving_directory+"SaveData"+string(global.savenum)) == false)
+    {
       global.death = 0;
       global.timestep = 0;
       saveGame();
@@ -52,8 +56,6 @@ maxHP = 100;
 curHP = maxHP;
 
 playerMoveType = PLAYER_MOVE_TYPE_DEFAULT;
-
-//playerMoveType = PLAYER_MOVE_TYPE_DISCRETE;
 
 //discrete move
 discreteIdleCount = 0;

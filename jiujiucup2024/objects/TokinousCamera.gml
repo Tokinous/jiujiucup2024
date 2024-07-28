@@ -4,9 +4,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-//view
-destViewAng = 0;
-
+//view rect
 viewAdj = 0;
 viewScale = 1;
 destViewScale = 1;
@@ -29,13 +27,18 @@ viewType = 0;
 easeParam = 10;
 
 linearParam = 0;
+
+
+//rotate
+viewRotate = 0;
+viewRotateType = 0;
 #define Step_2
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-//view
+//view rect
 
 viewH = view_hview[0];
 viewW = view_wview[0];
@@ -123,44 +126,18 @@ switch(viewAdj)
         break;
 }
 
-/*
-else if(viewAdj == 1)
+//view rotate
+switch(viewRotateType)
 {
-    view_wview[0] = 800*viewScale;
-    view_hview[0] = 608*viewScale;
-
-    view_xview[0] = player.x-view_wview[0]/2;
-    view_yview[0] = player.y-view_hview[0]/2;
+    case VIEW_OPERATION_ROTATE_STATIC:
+        {
+            view_angle[0] = viewRotate;
+        }
+        break;
+    case VIEW_OPERATION_ROTATE_RESET:
+        {
+            view_angle[0] = 0;
+        }
+    default:
+        break;
 }
-else if(viewAdj == 2)
-{
-    viewX += (destViewX-viewX)/10;
-    viewY += (destViewY-viewY)/10;
-
-    viewH += (destViewH-viewH)/10;
-    viewW += (destViewW-viewW)/10;
-
-    view_xview[0] = viewX;
-    view_yview[0] = viewY;
-
-    view_hview[0] = viewH;
-    view_wview[0] = viewW;
-
-}
-else if(viewAdj == 4)
-{
-    viewScale += 0.05;
-
-    viewX += (destViewX-viewX)/easeParam;
-    viewY += (destViewY-viewY)/easeParam;
-
-    viewH += (destViewH-viewH)/easeParam;
-    viewW += (destViewW-viewW)/easeParam;
-
-    view_xview[0] = viewX;
-    view_yview[0] = viewY;
-
-    view_hview[0] = viewH;
-    view_wview[0] = viewW;
-}
-*/

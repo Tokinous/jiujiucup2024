@@ -18,6 +18,8 @@ _cameraInfo = ' Camera Info: '
 + '[' + string(view_xview[0]) + ',' + string(view_yview[0]) + ']'
 + '[' + string(view_xview[0] + view_wview[0]) + ',' + string(view_yview[0] + view_hview[0]) + ']';
 
+_barrageColor = ' color[ ' + string(colorManager.barrageColorH) + ',' + string(colorManager.barrageColorS) + ',' + string(colorManager.barrageColorV) + ']';
+
 if instance_exists(player)
 {
     _playerX += string(player.x);
@@ -69,14 +71,6 @@ if abs(FMODInstanceGetPosition(global.BGMHandler)*bgm_length-m_time)>75
     FMODInstanceSetPosition(global.BGMHandler,m_time/bgm_length);
 
 FMODUpdate();
-
-/*
-//debug
-_curStep = 'curStep: ' + string(round(timeline_position));
-_isPlaying = ' IsPlaying: ' + string(FMODInstanceIsPlaying(global.BGMHandler));
-_instNum = ' nums: ' + string(instance_number(all));
-_curFps = ' FPS: ' + string(fps) + '/50';
-_route=' route: '+ string(global.route);
 #define Destroy_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -110,6 +104,9 @@ _cameraInfo = ' Camera:'
 + '[' + string(view_xview[0]) + ',' + string(view_yview[0]) + ']'
 + '[' + string(view_xview[0] + view_wview[0]) + ',' + string(view_yview[0] + view_hview[0]) + ']';
 
+_barrageColor = ' Color[' + string(colorManager.barrageColorH) + ',' + string(colorManager.barrageColorS) + ',' + string(colorManager.barrageColorV) + ']';
+
+/*
 if instance_exists(player)
 {
     _playerX += string(player.x);
@@ -120,6 +117,8 @@ else
     _playerX += string(0);
     _playerY += string(0);
 }
+*/
+
 _curFps = ' FPS[' + string(fps) + '/50]';
 #define Step_1
 /*"/*'/**//* YYD ACTION
@@ -159,9 +158,9 @@ draw_set_font(fontDefault);
 draw_set_alpha(1);
 
 draw_text_transformed(
-    view_xview[0] + 64,
-    view_yview[0] + 64,
-    _curStep + _playerHP + _maxInstNum + _instNum + _cameraInfo + _curFps,
+    view_xview[0] + 48,
+    view_yview[0] + 48,
+    _curStep + _playerHP + _maxInstNum + _instNum + _cameraInfo + _curFps + _barrageColor,
     view_wview[0]/800,
     view_hview[0]/608,
     0

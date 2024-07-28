@@ -10,3 +10,4 @@ applies_to=self
 //}
 
 image_speed=0
+visible = true;
