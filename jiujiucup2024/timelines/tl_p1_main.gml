@@ -6,13 +6,7 @@ applies_to=self
 */
 alarm[0] = 92;
 
-DrawBlocks(0, 0, BLOCK_DRAW_DIRECTION_HORIZONAL, 25);
-
-DrawBlocks(0, 608 - 32, BLOCK_DRAW_DIRECTION_HORIZONAL, 25);
-
-DrawBlocks(0, 0, BLOCK_DRAW_DIRECTION_VERTICAL, 19);
-
-DrawBlocks(800 - 32, 0, BLOCK_DRAW_DIRECTION_VERTICAL, 19);
+DrawBolcksDefault();
 #define 438
 /*"/*'/**//* YYD ACTION
 lib_id=1

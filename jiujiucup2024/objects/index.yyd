@@ -460,3 +460,10 @@ p2bBlock
 p2bCycloid
 p2bCircle
 p2bDiscrete
+p2bDiscreteBorder
+bgScreen
+
+colorManager
+p2bPub
+p3
+objErrorDot

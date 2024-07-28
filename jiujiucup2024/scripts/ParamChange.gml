@@ -16,6 +16,7 @@ switch(type)
                     {
                         with player
                         {
+                            playerMoveType = PLAYER_MOVE_TYPE_DEFAULT;
                             infJump = true;
                         }
 
@@ -28,6 +29,7 @@ switch(type)
                         {
                             infJump = false;
                             maxJumps = arg1;
+                            playerMoveType = PLAYER_MOVE_TYPE_DEFAULT;
                         }
 
                         CreateParamChangeNotice("Parameter Change: Jump Restrict - max jump: " + string(arg1));
@@ -42,12 +44,6 @@ switch(type)
         {
             with player
             {
-                x -= x mod 32;
-                y -= y mod 32;
-
-                x += 17;
-                y += 23;
-
                 hspeed = 0;
                 vspeed = 0;
                 gravity = 0;

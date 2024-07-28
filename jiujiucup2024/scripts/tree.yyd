@@ -247,6 +247,9 @@
 	|ParamChange
 	+TokinousCamera
 		|CameraRect
+		|CameraRotate
+	|DrawBolcksDefault
+	|MoveToGrid
 +runtime functions
 	+p1
 		|P1FiveSquare
@@ -264,7 +267,12 @@
 		|P2Create
 		|P2CreateRunningBlockBrg
 		|P2CreateDiamondCircle
+		|P2MoveByDiscrete
+		|P2KickTheDanceFloor
 	|CreateBackGround
+	|CreateScreenBackGround
+	|BarrageColorManage
+	|BarrageColorChange
 +quickcalc functions
 	+QuickClac
 		+basic
