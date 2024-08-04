@@ -13,7 +13,6 @@
         //create death effects
         
         FMODAllStop();
-        audio_playmusic(dogsong);
         
         instance_create(player.x,player.y,bloodEmitter);
         instance_create(view_xview[0] + view_wview[0] / 2,view_yview[0] + view_hview[0] - 128,GAMEOVER);
