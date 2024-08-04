@@ -13,3 +13,5 @@ action_id=603
 applies_to=self
 */
 y = p2.discreteBorder;
+
+image_blend = colorManager.barrageColor;

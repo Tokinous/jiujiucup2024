@@ -26,17 +26,11 @@
 		+p2
 			|p2bDiscrete
 			|p2
-			|p2bCircleToPlayer
-			|p2bCurve
-			|p2bBlock
-			|p2bCycloid
 			|p2bCircle
 			|p2bDiscreteBorder
 			|p2bPub
-			|p2bCircleToStraight
 			|p2bFollowView
 			|p2bFollowView2
-		|bgBreath
 		+p3
 			|p3
 |block

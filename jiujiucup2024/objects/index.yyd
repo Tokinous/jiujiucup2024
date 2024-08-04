@@ -452,12 +452,12 @@ TokinousCamera
 p1FrontGFadeIn
 p1bCircleOutside
 p2
-p2bCircleToPlayer
 
-p2bCurve
-bgBreath
-p2bBlock
-p2bCycloid
+
+
+
+
+
 p2bCircle
 p2bDiscrete
 p2bDiscreteBorder
@@ -469,6 +469,6 @@ p3
 objErrorDot
 
 
-p2bCircleToStraight
+
 p2bFollowView
 p2bFollowView2

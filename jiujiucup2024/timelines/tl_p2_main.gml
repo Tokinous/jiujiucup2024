@@ -98,16 +98,10 @@ action_id=603
 applies_to=self
 */
 outerCircle = 0;
-curveBase = 0;
 
-flag = 0;
 alarm[0] = 0;
 
-with p2bCircleToPlayer instance_destroy();
-
 P2CreateDiamondCircle();
-
-with p2bBlock instance_destroy();
 
 CameraRotate(VIEW_OPERATION_ROTATE_EASE, -360, 10);
 #define 1085
