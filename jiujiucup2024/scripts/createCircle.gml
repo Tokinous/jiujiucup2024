@@ -48,12 +48,4 @@ for(i=0;i<num;i+=1){
     }
 
     //arg 8, extra arg
-    if(!argument8)
-    {
-        if(ts_p3_bpath == inst.object_index)
-        {
-            inst.flag = argument8;
-        }
-    }
-
 }
