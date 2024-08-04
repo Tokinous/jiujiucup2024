@@ -15,7 +15,7 @@ barrageColorV = 100;
 barrageColor = c_white;
 
 barrageColorHChangeType = COLOR_CHANGE_TYPE_NONE;
-barrageColorHChangeSpeed = 0.5;
+barrageColorHChangeSpeed = 1;
 barrageColorHChangeFlag = 1;
 #define Step_0
 /*"/*'/**//* YYD ACTION

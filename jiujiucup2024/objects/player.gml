@@ -60,6 +60,9 @@ playerMoveType = PLAYER_MOVE_TYPE_DEFAULT;
 //discrete move
 discreteIdleCount = 0;
 discreteIdleInterrupt = 24;
+
+//slope gravity
+slopeGravity = false;
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -84,12 +87,14 @@ switch(playerMoveType)
     case PLAYER_MOVE_TYPE_DEFAULT:
         {
             ///Player movements
-            if(global.frozen2 == 0){
+            if(global.frozen2 == 0)
+            {
                 playerMove();
                 playerWallJump();
                 playerMisc();
             }
-            else{
+            else
+            {
                 gravity = 0;
                 image_speed = 0;
                 speed = 0;
@@ -99,6 +104,7 @@ switch(playerMoveType)
     case PLAYER_MOVE_TYPE_DISCRETE:
         {
             PlayerDiscreteMove();
+            playerShoot();
         }
         break;
     default:

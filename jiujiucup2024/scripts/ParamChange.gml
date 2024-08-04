@@ -20,7 +20,7 @@ switch(type)
                             infJump = true;
                         }
 
-                        CreateParamChangeNotice("Parameter Change: Jump Restrict - Infinite");
+                        CreateParamChangeNotice("Jump: Infinite");
                     }
                     break;
                 case PLAYER_JUMP_RESTRICT_TIMES:
@@ -32,12 +32,25 @@ switch(type)
                             playerMoveType = PLAYER_MOVE_TYPE_DEFAULT;
                         }
 
-                        CreateParamChangeNotice("Parameter Change: Jump Restrict - max jump: " + string(arg1));
+                        CreateParamChangeNotice("Jump: Max - " + string(arg1));
                     }
                     break;
                 default:
                     break;
             }
+        }
+        break;
+    case PARAM_CHANGE_TYPE_SLOPE_GRAVITY:
+        {
+            with player
+            {
+                infJump = false;
+                maxJumps = 2;
+                playerMoveType = PLAYER_MOVE_TYPE_DEFAULT;
+                slopeGravity = true;
+            }
+
+            CreateParamChangeNotice("MOVE: SLOPE");
         }
         break;
     case PARAM_CHANGE_TYPE_DISCRETE_MOVE:

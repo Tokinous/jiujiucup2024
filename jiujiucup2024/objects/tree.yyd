@@ -33,6 +33,9 @@
 			|p2bCircle
 			|p2bDiscreteBorder
 			|p2bPub
+			|p2bCircleToStraight
+			|p2bFollowView
+			|p2bFollowView2
 		|bgBreath
 		+p3
 			|p3

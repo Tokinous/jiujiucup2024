@@ -95,3 +95,8 @@ if(global.frozen == false){
         vspeed *= 0.45;
     }
 }
+
+if(slopeGravity)
+{
+    hspeed -= maxVspeed *(sin(degtorad(view_angle[0]))) / 1.25;
+}
