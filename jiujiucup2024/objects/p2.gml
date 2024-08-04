@@ -27,8 +27,11 @@ curveFlag = choose(-1, 1);
 discreteTime = 0;
 alarm[1] = 0;
 
-discreteIndex = 0;
+discreteIndex = -1;
 discreteBorder = 608;
+
+//outercircle
+outerCircle = 1;
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
@@ -296,18 +299,22 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-/*
-curve = curveBase * curveFlag;
-
-if(flag)
-{
-    radiumToPlayer += 10;
-    P2GenerateCircleToPlayer(radiumToPlayer);
-}
-*/
 if(discreteTime > 0)
 {
     discreteBorder -= 608 / discreteTime;
+}
+
+if(1 == outerCircle)
+{
+    var range;
+    range = 700
+    CreateMoveOne(random_range(-range, 800 + range), random_range(-96, -32), p2bFollowView, random_range(8, 16), 270 - view_angle[0]);
+}
+else if(2 == outerCircle)
+{
+    var range;
+    range = 800
+    CreateMoveOne(random_range(-range, 800 + range), random_range(-96, -32), p2bFollowView2, random_range(8, 16), 270 - view_angle[0]);
 }
 #define KeyPress_82
 /*"/*'/**//* YYD ACTION

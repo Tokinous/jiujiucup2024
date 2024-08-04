@@ -28,10 +28,12 @@ easeParam = 10;
 
 linearParam = 0;
 
-
 //rotate
 viewRotate = 0;
 viewRotateType = 0;
+destViewRotate = 0;
+viewRotateEaseParam = 0;
+viewRotateSpeed = 0;
 #define Step_2
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -132,6 +134,27 @@ switch(viewRotateType)
     case VIEW_OPERATION_ROTATE_STATIC:
         {
             view_angle[0] = viewRotate;
+        }
+        break;
+    case VIEW_OPERATION_ROTATE_LINEAR:
+        {
+            var flag;
+            if(destViewRotate < view_angle[0])
+            {
+                flag = -1;
+            }
+            else
+            {
+                flag = 1;
+            }
+
+            view_angle[0] += viewRotateSpeed * flag;
+
+        }
+        break;
+    case VIEW_OPERATION_ROTATE_EASE:
+        {
+            view_angle[0] += (destViewRotate - view_angle[0]) / viewRotateEaseParam;
         }
         break;
     case VIEW_OPERATION_ROTATE_RESET:

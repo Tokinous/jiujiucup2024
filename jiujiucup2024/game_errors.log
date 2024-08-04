@@ -1,7 +1,7 @@
 ERROR in
 action number 1
 of Draw Event
-for object brgbase:
+for object objShadow:
 
 Trying to draw non-existing sprite.
 

@@ -100,11 +100,11 @@ _maxInstNum = ' maxInst[' + string(maxNum) + ']';
 _instNum = ' nums[' + string(instance_number(all)) + ']';
 _playerX = ' X: ';
 _playerY = ' Y: ';
-_cameraInfo = ' Camera:'
+_cameraInfo = 'Camera:'
 + '[' + string(view_xview[0]) + ',' + string(view_yview[0]) + ']'
-+ '[' + string(view_xview[0] + view_wview[0]) + ',' + string(view_yview[0] + view_hview[0]) + ']';
-
-_barrageColor = ' Color[' + string(colorManager.barrageColorH) + ',' + string(colorManager.barrageColorS) + ',' + string(colorManager.barrageColorV) + ']';
++ '[' + string(view_xview[0] + view_wview[0]) + ',' + string(view_yview[0] + view_hview[0]) + ']'
++ 'ang' + '[' + string(view_angle[0]) + ']';
+_barrageColor = 'brg color[' + string(colorManager.barrageColorH) + ',' + string(colorManager.barrageColorS) + ',' + string(colorManager.barrageColorV) + ']';
 
 /*
 if instance_exists(player)
@@ -160,7 +160,16 @@ draw_set_alpha(1);
 draw_text_transformed(
     view_xview[0] + 48,
     view_yview[0] + 48,
-    _curStep + _playerHP + _maxInstNum + _instNum + _cameraInfo + _curFps + _barrageColor,
+    _curStep + _playerHP + _maxInstNum + _instNum,
+    view_wview[0]/800,
+    view_hview[0]/608,
+    0
+);
+
+draw_text_transformed(
+    view_xview[0] + 48,
+    view_yview[0] + 48 + 32,
+    _cameraInfo + _curFps + _barrageColor,
     view_wview[0]/800,
     view_hview[0]/608,
     0
