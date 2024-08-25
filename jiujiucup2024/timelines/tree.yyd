@@ -5,3 +5,11 @@
 		|tl_p1_sub
 	+p2
 		|tl_p2_main
+	+pVisible
+		|tl_pV_main
+	+p4
+		|tl_p4_main
+	+pC
+		|tl_pC_main
+	+p3
+		|tl_p3_main

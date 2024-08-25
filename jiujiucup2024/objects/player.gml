@@ -12,7 +12,7 @@ applies_to=self
 //  global.reverse      0: normal kid ; 1: reverse kid
 //
 //whether can infinite jump or not
-infJump = false;
+infJump = true;
 //first jump speed
 jump[1] = 8.5;
 //second jump speed
@@ -52,7 +52,7 @@ if(room != rSelectStage && room != rOptions)
     }
 }
 
-maxHP = 100;
+maxHP = 10;
 curHP = maxHP;
 
 playerMoveType = PLAYER_MOVE_TYPE_DEFAULT;
@@ -63,6 +63,12 @@ discreteIdleInterrupt = 24;
 
 //slope gravity
 slopeGravity = false;
+
+//dotkid mode
+dotkidMode = 0;
+
+//invert control
+invertControl = 0;
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -240,6 +246,25 @@ applies_to=self
 if(place_meeting(x,y,roomChanger) == false){
     killPlayer();
 }
+#define Draw_0
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+if(dotkidMode)
+{
+    draw_set_color(c_white);
+    draw_set_blend_mode(bm_add);
+    draw_set_alpha(1);
+
+    draw_rectangle(x - 16, y - 16, x + 16, y + 16, 1);
+
+    draw_set_blend_mode(bm_normal);
+    draw_set_alpha(1);
+}
+
+draw_self();
 #define KeyPress_81
 /*"/*'/**//* YYD ACTION
 lib_id=1

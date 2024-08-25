@@ -232,7 +232,6 @@
 	|ClearAllBrg
 	|dirCurToPlayer
 	|DebugMusicPart
-	|SelectColor_ts
 	|outViewDontDes
 +avoidance_func
 	|DrawBlocks
@@ -250,6 +249,9 @@
 		|CameraRotate
 	|DrawBolcksDefault
 	|MoveToGrid
+	|GetMainColor
+	|CreateLineStar
+	|CreateLineDots
 +runtime functions
 	+p1
 		|P1FiveSquare
@@ -270,9 +272,23 @@
 		|P2MoveByDiscrete
 		|P2KickTheDanceFloor
 	|CreateBackGround
-	|CreateScreenBackGround
 	|BarrageColorManage
 	|BarrageColorChange
+	+pV
+		|PVCreateDelayLine
+		|PVMoveToSquare
+		|PVCreateLaser
+		|PVCreateCricleLaser
+		|PVCreateLineStar
+		|PVCreateLineDot
+	+pC
+		|PCCreateLinkStar
+		|PCCreateRandomStar
+		|PCP1
+	+p4
+	+p3
+		|P3CreateCircle
+		|P3CreateCircleArr
 +quickcalc functions
 	+QuickClac
 		+basic

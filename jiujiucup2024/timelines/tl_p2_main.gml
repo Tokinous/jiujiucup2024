@@ -26,6 +26,8 @@ ParamChange(PARAM_CHANGE_TYPE_SLOPE_GRAVITY);
 CameraRotate(VIEW_OPERATION_ROTATE_EASE, 15, 10);
 
 BarrageColorChange(COLOR_CHANGE_TYPE_LINEAR, 0.75);
+
+instance_create(0, 0, arcadeBg);
 #define 173
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -104,6 +106,11 @@ alarm[0] = 0;
 P2CreateDiamondCircle();
 
 CameraRotate(VIEW_OPERATION_ROTATE_EASE, -360, 10);
+
+with arcadeBg instance_destroy();
+
+with p2bFollowView instance_destroy();
+with p2bFollowView2 instance_destroy();
 #define 1085
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -195,7 +202,7 @@ applies_to=self
 */
 P2KickTheDanceFloor(0, 0);
 
-ParamChange(PARAM_CHANGE_TYPE_JUMP, PLAYER_JUMP_RESTRICT_TIMES, 0);
+ParamChange(PARAM_CHANGE_TYPE_RESET);
 #define 1431
 /*"/*'/**//* YYD ACTION
 lib_id=1

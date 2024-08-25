@@ -1,0 +1,3 @@
+//GetMainColor()
+
+return colorManager.barrageColor;

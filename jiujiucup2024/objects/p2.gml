@@ -261,13 +261,13 @@ if(discreteTime > 0)
 if(1 == outerCircle)
 {
     var range;
-    range = 700
+    range = 1000;
     CreateMoveOne(random_range(-range, 800 + range), random_range(-96, -32), p2bFollowView, random_range(8, 16), 270 - view_angle[0]);
 }
 else if(2 == outerCircle)
 {
     var range;
-    range = 800
+    range = 1200;
     CreateMoveOne(random_range(-range, 800 + range), random_range(-96, -32), p2bFollowView2, random_range(8, 16), 270 - view_angle[0]);
 }
 #define KeyPress_82

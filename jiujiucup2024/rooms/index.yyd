@@ -32,9 +32,12 @@ rtest
 
 r_p1
 r_p2
-r_p3
+r_pM
 r_p4
-r_p5
+r_pC
 r_p6
 r_p7
 rAvoidance
+r_pV
+
+r_p3

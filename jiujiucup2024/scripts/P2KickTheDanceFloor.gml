@@ -36,3 +36,5 @@ for(i = 0; i < ds_list_size(listKickTheDanceFloorX); i += 1)
     instance_create(xx, yy, p2bPub);
 
 }
+
+with arcadeBgSquare visible = flag;

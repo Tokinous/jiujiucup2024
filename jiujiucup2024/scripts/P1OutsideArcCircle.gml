@@ -13,7 +13,7 @@ var numPerArc;
 numPerArc = 16;
 
 var asyncPhase;
-asyncPhase = random_range(0, 90);
+asyncPhase = random_range(45, 70);
 
 for(i = 0; i < num; i += 1)
 {

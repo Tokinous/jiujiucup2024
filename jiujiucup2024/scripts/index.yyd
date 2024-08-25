@@ -264,7 +264,7 @@ ClearAllBrg
 
 dirCurToPlayer
 DebugMusicPart
-SelectColor_ts
+
 outViewDontDes
 
 DrawBlocks
@@ -336,10 +336,26 @@ CreateBackGround
 P2CreateRunningBlockBrg
 P2CreateDiamondCircle
 P2MoveByDiscrete
-CreateScreenBackGround
+
 DrawBolcksDefault
 BarrageColorManage
 BarrageColorChange
 CameraRotate
 P2KickTheDanceFloor
 MoveToGrid
+GetMainColor
+
+PVCreateDelayLine
+PVMoveToSquare
+PVCreateLaser
+PVCreateCricleLaser
+CreateLineDots
+PCCreateLinkStar
+PCCreateRandomStar
+PCP1
+P3CreateCircle
+P3CreateCircleArr
+
+CreateLineStar
+PVCreateLineStar
+PVCreateLineDot
