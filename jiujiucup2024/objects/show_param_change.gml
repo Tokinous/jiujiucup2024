@@ -6,7 +6,7 @@ applies_to=self
 */
 text = 'Param Change:';
 
-alarm[0] = 150;
+alarm[0] = 50;
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1

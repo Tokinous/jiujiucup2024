@@ -461,7 +461,7 @@ p2
 p2bCircle
 p2bDiscrete
 p2bDiscreteBorder
-bgScreen
+
 
 colorManager
 p2bPub
@@ -472,3 +472,25 @@ objErrorDot
 
 p2bFollowView
 p2bFollowView2
+arcadeBg
+arcadeBgSquare
+pV
+pVbCraw
+p4
+pVbDelay
+pVbPub
+pVbScaleMinus
+objTmp
+pVbEaseMove
+pVbLaser
+pM
+
+pMPlayer
+pC
+
+pCbDelay
+pCbLaser
+p3bCircle
+p3bShadow
+pVPlayerHinter
+pVbHint

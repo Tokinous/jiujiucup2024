@@ -23,6 +23,7 @@
 	|sprPlayerLadderLeftRight
 	|sprWallJumpL
 	|sprWallJumpR
+	|maskPlayerDot
 +buttons
 	|sprButton
 	|sprButtonShoot

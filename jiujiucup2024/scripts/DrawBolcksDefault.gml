@@ -1,7 +1,12 @@
-DrawBlocks(0, 0, BLOCK_DRAW_DIRECTION_HORIZONAL, 25);
+//DrawBolcksDefault(offset x, offset y)
+var xOffset, yOffset;
+xOffset = argument0;
+yOffset = argument1;
 
-DrawBlocks(0, 608 - 32, BLOCK_DRAW_DIRECTION_HORIZONAL, 25);
+DrawBlocks(xOffset, yOffset, BLOCK_DRAW_DIRECTION_HORIZONAL, 25);
 
-DrawBlocks(0, 0, BLOCK_DRAW_DIRECTION_VERTICAL, 19);
+DrawBlocks(xOffset, 608 - 32 + yOffset, BLOCK_DRAW_DIRECTION_HORIZONAL, 25);
 
-DrawBlocks(800 - 32, 0, BLOCK_DRAW_DIRECTION_VERTICAL, 19);
+DrawBlocks(xOffset, yOffset, BLOCK_DRAW_DIRECTION_VERTICAL, 19);
+
+DrawBlocks(800 - 32 + xOffset, yOffset, BLOCK_DRAW_DIRECTION_VERTICAL, 19);

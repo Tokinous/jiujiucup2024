@@ -8,8 +8,9 @@
 	+3rdavenue
 		|_3rdAv_fmod
 		|_3rdAv_main
-		|bgScreen
 		|colorManager
+		|arcadeBgSquare
+		|arcadeBg
 		|show_param_change
 		+p1
 			|p1
@@ -32,7 +33,30 @@
 			|p2bFollowView
 			|p2bFollowView2
 		+p3
+			|p3bCircle
 			|p3
+			|p3bShadow
+		+pvisible
+			|pV
+			|pVbCraw
+			|pVbDelay
+			|pVbPub
+			|pVbScaleMinus
+			|pVbEaseMove
+			|pVbLaser
+			|pVPlayerHinter
+			|pVbHint
+		+p4
+			|p4
+		+pmultiplayer
+			|pM
+			|pMPlayer
+		+pVVVVVV
+		+pCenterGravity
+			|pC
+			|pCbDelay
+			|pCbLaser
+	|objTmp
 |block
 +savePoint
 	|savePointMedium

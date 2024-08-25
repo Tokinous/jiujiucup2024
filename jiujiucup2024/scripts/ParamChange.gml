@@ -8,6 +8,45 @@ arg1 = argument2;
 
 switch(type)
 {
+    case PARAM_CHANGE_TYPE_VISIBILITY:
+        {
+            with player
+            {
+                visible = value;
+            }
+
+            var strVisible;
+            if(value)
+                strVisible = "ENABLE";
+            else
+                strVisible = "DISABLE";
+
+            CreateParamChangeNotice("VISIBLE: " + strVisible);
+        }
+        break;
+    case PARAM_CHANGE_TYPE_INVERT_CONTROL:
+        {
+            with player
+            {
+                invertControl = 1;
+            }
+
+            CreateParamChangeNotice("ERROR: INVERTED");
+        }
+        break;
+    case PARAM_CHANGE_TYPE_RESET:
+        {
+            with player
+            {
+                infJump = false;
+                maxJumps = 2;
+                playerMoveType = PLAYER_MOVE_TYPE_DEFAULT;
+                slopeGravity = false;
+                invertControl = 0;
+                visible = 1;
+            }
+        }
+        break;
     case PARAM_CHANGE_TYPE_JUMP:
         {
             switch(value)
@@ -32,7 +71,7 @@ switch(type)
                             playerMoveType = PLAYER_MOVE_TYPE_DEFAULT;
                         }
 
-                        CreateParamChangeNotice("Jump: Max - " + string(arg1));
+                        //CreateParamChangeNotice("Jump: Max - " + string(arg1));
                     }
                     break;
                 default:
