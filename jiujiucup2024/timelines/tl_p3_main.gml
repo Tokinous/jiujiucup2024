@@ -13,7 +13,7 @@ if(room == r_p3)
 
 if(type == 0)
 {
-    ParamChange(PARAM_CHANGE_TYPE_RESET);
+    //ParamChange(PARAM_CHANGE_TYPE_RESET);
     DebugMusicPart(46.153);
 }
 else if(type == 1)

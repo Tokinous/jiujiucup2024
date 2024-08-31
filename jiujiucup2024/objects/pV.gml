@@ -21,8 +21,6 @@ listAnchorY = 0;
 listAnchorSize = 0;
 listI = 0;
 
-PVCreateDelayLine(player.x, 64*2, 0);
-
 lineY = 0;
 index = 0;
 
@@ -34,20 +32,31 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-alarm[0] = 12;
+alarm[0] = 13;
 
-//PVCreateDelayLine(random_range(200, 600), lineY, 0, index mod 2);
-//PVCreateDelayLine(random_range(200, 600), random_range(0, 304), 0, (index + 1) mod 2);
+PVCreateDelayLine(random_range(200, 600), random_range(0, 608 - 32 * 6), 0, index mod 2);
+PVCreateDelayLine(random_range(200, 600), random_range(0, 608 - 32 * 6), 0, (index + 1) mod 2);
 
 index += 1;
 
-//lineY += 32;
+lineY += 32;
 
 if(index mod 4 == 0)
     angleCount += 1;
+#define Alarm_1
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+alarm[1] = 13;
 
-PVCreateLineStar(angleCount, angleR, irandom_range(2, 3 + (index div 2)), 16 + (index div 4) * 8, random(360), pVbDelay, index mod 2);
+PVCreateDelayLine(random_range(200, 600), random_range(0, 608 - 32 * 6), 0, 2);
+PVCreateDelayLine(random_range(200, 600), random_range(0, 608 - 32 * 6), 0, 2);
 
-angleR += 20;
+index += 1;
 
-angleCount += 1;
+lineY -= 32;
+
+if(index mod 4 == 0)
+    angleCount += 1;

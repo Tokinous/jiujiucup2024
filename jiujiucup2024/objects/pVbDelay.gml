@@ -38,6 +38,12 @@ switch(type)
             CreateMoveOne(x, y, pVbScaleMinus, 16, point_direction(x, y, choose(player.x + 128, player.x - 128), player.y));
         }
         break;
+    case 2:
+        {
+            if(id mod 4 == 0)
+                CreateMoveOne(x, y, pVbScaleMinus, 16, 270);
+        }
+        break;
     default:
         break;
 }

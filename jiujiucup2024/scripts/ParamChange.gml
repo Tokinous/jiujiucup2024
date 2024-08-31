@@ -1,5 +1,7 @@
 //ParamChange(type, value)
 
+with show_param_change instance_destroy();
+
 var type, value, arg1;
 
 type = argument0;
@@ -8,6 +10,22 @@ arg1 = argument2;
 
 switch(type)
 {
+    case PARAM_CHANGE_TYPE_HITBOX:
+        {
+            with player
+            {
+                dotkidMode = value;
+            }
+
+            var strEnable;
+            if(value)
+                strEnable = "ENABLE";
+            else
+                strEnable = "DISABLE";
+
+            CreateParamChangeNotice("DOTKID: " + strEnable);
+        }
+        break;
     case PARAM_CHANGE_TYPE_VISIBILITY:
         {
             with player
@@ -45,6 +63,8 @@ switch(type)
                 invertControl = 0;
                 visible = 1;
             }
+
+            CreateParamChangeNotice("RESET");
         }
         break;
     case PARAM_CHANGE_TYPE_JUMP:

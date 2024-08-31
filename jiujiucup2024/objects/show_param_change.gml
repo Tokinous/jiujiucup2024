@@ -27,6 +27,9 @@ draw_set_color(c_white);
 
 draw_set_alpha(random_range(0.75, 1));
 
-draw_text(400, 304 - 32, text);
+if(player.visible)
+    draw_text(player.x, player.y - 32, text);
+else
+    draw_text(400, 608 - 32 -16, text);
 
 draw_set_alpha(1);

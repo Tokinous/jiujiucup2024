@@ -359,3 +359,9 @@ P3CreateCircleArr
 CreateLineStar
 PVCreateLineStar
 PVCreateLineDot
+PRCreatePolygon
+PRCreateCircle
+PRCreateAsyncCircle
+
+PVP1
+PVP2

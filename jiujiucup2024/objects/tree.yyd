@@ -46,6 +46,7 @@
 			|pVbLaser
 			|pVPlayerHinter
 			|pVbHint
+			|pVbStop
 		+p4
 			|p4
 		+pmultiplayer
@@ -56,6 +57,15 @@
 			|pC
 			|pCbDelay
 			|pCbLaser
+		+pRest
+			|pR
+			|pRbCross
+			|pRBg
+			|pRbCircle
+			|pRbCircle2
+			|pRbAnchor
+			|pRbPub
+			|pRbCurve
 	|objTmp
 |block
 +savePoint
