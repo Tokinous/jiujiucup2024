@@ -367,3 +367,8 @@ PVP1
 PVP2
 PVCreateCricleLaser2
 PVCreateLaser2
+PMCreateCircle
+PMP1
+PMCreateCircleArr
+PMP2
+PMSquareLine

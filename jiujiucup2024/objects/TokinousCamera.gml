@@ -56,6 +56,8 @@ switch(viewAdj)
             view_yview[0] = 0;
             view_wview[0] = 800;
             view_hview[0] = 608;
+
+            viewAdj = VIEW_OPERATION_NONE;
         }
         break;
     case VIEW_OPERATION_SCALE_EASE:
@@ -117,11 +119,6 @@ switch(viewAdj)
 
             view_hview[0] = viewH;
             view_wview[0] = viewW;
-        }
-        break;
-    case VIEW_OPERATION_RESET:
-        {
-
         }
         break;
     default:
