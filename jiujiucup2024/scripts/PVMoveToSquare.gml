@@ -1,17 +1,17 @@
-//PVMoveToSquare(x, y, offset)
+//PVMoveToSquare(x, y, offset, basicR, lineNum)
 
 var centerX, centerY, basicR;
 
 centerX = argument0;
 centerY = argument1;
-basicR = 16;
+basicR = argument3;
 
 listAnchorX = ds_list_create();
 listAnchorY = ds_list_create();
 
 var angleNum, spd, lineNum, objAnchor, offset;
 angleNum = 4;
-lineNum = 24;
+lineNum = argument4;
 objAnchor = objTmp;
 spd = 10;
 offset = argument2;
@@ -51,9 +51,9 @@ for(j = 1; j <= angleNum; j += 1)
 listAnchorSize = ds_list_size(listAnchorX);
 listI = 0;
 
-with pVbScaleMinus
+with pVbStop
 {
-    if(pV.listI <= pV.listAnchorSize)
+    if(pV.listI <= pV.listAnchorSize && id mod 2 == 0)
     {
         var ease;
         ease = instance_create(x, y, pVbEaseMove);

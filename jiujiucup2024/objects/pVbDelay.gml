@@ -26,23 +26,6 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-switch(type)
-{
-    case 0:
-        {
-            CreateMoveOne(x, y, pVbScaleMinus, 16, point_direction(x, y, player.x, player.y));
-        }
-        break;
-    case 1:
-        {
-            CreateMoveOne(x, y, pVbScaleMinus, 16, point_direction(x, y, choose(player.x + 128, player.x - 128), player.y));
-        }
-        break;
-    default:
-        break;
-}
-
-
 instance_destroy();
 #define Step_0
 /*"/*'/**//* YYD ACTION

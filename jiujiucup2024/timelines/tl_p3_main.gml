@@ -13,7 +13,7 @@ if(room == r_p3)
 
 if(type == 0)
 {
-    ParamChange(PARAM_CHANGE_TYPE_RESET);
+    //ParamChange(PARAM_CHANGE_TYPE_RESET);
     DebugMusicPart(46.153);
 }
 else if(type == 1)
@@ -150,9 +150,6 @@ else if(type == 1)
 {
     with p3bCircle
     {
-        //if(image_alpha >= 0)
-            //CreateMoveOne(x, y, p3bShadow, 48, point_direction(400, 304, x, y));
-
         instance_destroy();
     }
 

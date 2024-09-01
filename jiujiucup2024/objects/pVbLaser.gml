@@ -5,7 +5,7 @@ action_id=603
 applies_to=self
 */
 image_xscale = 65536;
-image_yscale = 1.25;
+image_yscale = 2;
 #define Step_0
 /*"/*'/**//* YYD ACTION
 lib_id=1

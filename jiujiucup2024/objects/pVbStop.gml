@@ -4,14 +4,21 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-alarm[0] = 23;
-t = 13;
+tempSpd = 0;
+alarm[0] = 12;
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-alarm[0] = t;
+tempSpd = speed;
 
-instance_create(400, 304, arcadeBgSquare);
+speed = 0;
+#define Other_40
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=203
+applies_to=self
+invert=0
+*/

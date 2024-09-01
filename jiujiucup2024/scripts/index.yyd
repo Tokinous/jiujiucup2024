@@ -332,7 +332,7 @@ CalcCircleYAsync
 PlayerDiscreteMove
 P2GenerateCircleToPlayer
 P2Create
-CreateBackGround
+
 P2CreateRunningBlockBrg
 P2CreateDiamondCircle
 P2MoveByDiscrete
@@ -357,5 +357,13 @@ P3CreateCircle
 P3CreateCircleArr
 
 CreateLineStar
-PVCreateLineStar
-PVCreateLineDot
+
+
+PRCreatePolygon
+PRCreateCircle
+PRCreateAsyncCircle
+
+PVP1
+PVP2
+PVCreateCricleLaser2
+PVCreateLaser2

@@ -1,5 +1,7 @@
 //ParamChange(type, value)
 
+with show_param_change instance_destroy();
+
 var type, value, arg1;
 
 type = argument0;
@@ -8,6 +10,38 @@ arg1 = argument2;
 
 switch(type)
 {
+    case PARAM_CHANGE_TYPE_NUMBER:
+        {
+            with player
+            {
+                infJump = false;
+                maxJumps = 2;
+                playerMoveType = PLAYER_MOVE_TYPE_DEFAULT;
+                slopeGravity = false;
+                invertControl = 0;
+                visible = 1;
+                dotkidMode = false;
+            }
+
+            CreateParamChangeNotice("PLAYER COUNT: " + string(value), 1);
+        }
+        break;
+    case PARAM_CHANGE_TYPE_HITBOX:
+        {
+            with player
+            {
+                dotkidMode = value;
+            }
+
+            var strEnable;
+            if(value)
+                strEnable = "ENABLE";
+            else
+                strEnable = "DISABLE";
+
+            CreateParamChangeNotice("DOTKID: " + strEnable);
+        }
+        break;
     case PARAM_CHANGE_TYPE_VISIBILITY:
         {
             with player
@@ -21,7 +55,7 @@ switch(type)
             else
                 strVisible = "DISABLE";
 
-            CreateParamChangeNotice("VISIBLE: " + strVisible);
+            CreateParamChangeNotice("VISIBLE: " + strVisible, 1);
         }
         break;
     case PARAM_CHANGE_TYPE_INVERT_CONTROL:
@@ -44,7 +78,10 @@ switch(type)
                 slopeGravity = false;
                 invertControl = 0;
                 visible = 1;
+                dotkidMode = false;
             }
+
+            CreateParamChangeNotice("RESET");
         }
         break;
     case PARAM_CHANGE_TYPE_JUMP:

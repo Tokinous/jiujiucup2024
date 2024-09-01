@@ -1,8 +1,8 @@
 ERROR in
 action number 1
-at time step 150
-of time line tl_pV_main:
+of Trigger Event: <Deleted>
+for object pRbAnchor:
 
-Creating instance for non-existing object: 0
+Error defining an external function.
 
 

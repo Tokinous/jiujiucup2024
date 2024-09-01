@@ -1,5 +1,5 @@
 name=System
-size=24
+size=16
 bold=0
 italic=0
 charset=1

@@ -13,3 +13,7 @@
 		|tl_pC_main
 	+p3
 		|tl_p3_main
+	+pRest
+		|tl_pR_main
+	+pM
+		|tl_pM_main
