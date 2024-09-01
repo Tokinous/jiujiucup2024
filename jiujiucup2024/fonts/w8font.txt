@@ -1,8 +1,0 @@
-name=Tahoma
-size=32
-bold=1
-italic=1
-charset=1
-aa_level=3
-range_start=0
-range_end=255
