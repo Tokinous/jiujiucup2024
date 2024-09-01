@@ -1,3 +1,16 @@
+|block_avo
+|block_default
++brg_spr
+	|sprBrg1
++buttons
+	|sprButton
+	|sprButtonShoot
+	|sprButtonLeft
+	|sprButtonJump
+	|sprButtonRight
+	|sprVolumeBar
+	|sprMusic
+	|sprSound
 +masks, world
 	|maskNothing
 	|sprGAMEOVER
@@ -24,17 +37,4 @@
 	|sprWallJumpL
 	|sprWallJumpR
 	|maskPlayerDot
-+buttons
-	|sprButton
-	|sprButtonShoot
-	|sprButtonLeft
-	|sprButtonJump
-	|sprButtonRight
-	|sprVolumeBar
-	|sprMusic
-	|sprSound
-|block_default
-+brg_spr
-	|sprBrg1
-|block_avo
 |spr_dk

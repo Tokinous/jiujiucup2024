@@ -1,10 +1,4 @@
 +Avoidances
-	|testObj
-	|fmodmusicTemplate
-	|partTemplate
-	|mainTemplate
-	|brgbase
-	|TokinousCamera
 	+3rdavenue
 		|_3rdAv_fmod
 		|_3rdAv_main
@@ -63,12 +57,22 @@
 			|pRbAnchor
 			|pRbPub
 			|pRbCurve
+	|brgbase
+	|fmodmusicTemplate
+	|mainTemplate
 	|objTmp
+	|partTemplate
+	|testObj
+	|TokinousCamera
 |block
-+savePoint
-	|savePointMedium
-	|savePoint
-	|savePointVHard
++effect
+	|objHPBar
+	|objShake
+	|objScreenFlash
+	|objScreenFlashEx
+	|objShadow
+	|objSmoothView
+	|objErrorDot
 +others
 	|objGravDown
 	|objGravUp
@@ -79,11 +83,10 @@
 	|movingPlatform
 	|pathPlatform
 	|objgameclear
-+warp
-	|warp
-	|invisibleWarp
-	|warpStart
-	|warpText
++parent
+	|platform
+	|playerKiller
+	|roomChanger
 +player_etc
 	+Options
 		|objButton
@@ -105,15 +108,12 @@
 	|titleButton
 	|menuSelect
 	|menuSelect2
-+parent
-	|platform
-	|playerKiller
-	|roomChanger
-+effect
-	|objHPBar
-	|objShake
-	|objScreenFlash
-	|objScreenFlashEx
-	|objShadow
-	|objSmoothView
-	|objErrorDot
++savePoint
+	|savePointMedium
+	|savePoint
+	|savePointVHard
++warp
+	|warp
+	|invisibleWarp
+	|warpStart
+	|warpText
