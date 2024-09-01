@@ -63,3 +63,12 @@ applies_to=self
 with pV instance_destroy();
 
 instance_create(0, 0, pM);
+#define 3784
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+with pM instance_destroy();
+
+instance_create(0, 0, pR);

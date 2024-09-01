@@ -253,6 +253,8 @@
 	|CreateLineStar
 	|CreateLineDots
 +runtime functions
+	|BarrageColorChange
+	|BarrageColorManage
 	+p1
 		|P1FiveSquare
 		|P1EightTriangle
@@ -271,8 +273,24 @@
 		|P2CreateDiamondCircle
 		|P2MoveByDiscrete
 		|P2KickTheDanceFloor
-	|BarrageColorManage
-	|BarrageColorChange
+	+p3
+		|P3CreateCircle
+		|P3CreateCircleArr
+	+p4
+	+pC
+		|PCCreateLinkStar
+		|PCCreateRandomStar
+		|PCP1
+	+pM
+		|PMCreateCircle
+		|PMCreateCircleArr
+		|PMP1
+		|PMP2
+		|PMSquareLine
+	+pRest
+		|PRCreatePolygon
+		|PRCreateCircle
+		|PRCreateAsyncCircle
 	+pV
 		|PVCreateDelayLine
 		|PVMoveToSquare
@@ -282,18 +300,6 @@
 		|PVCreateCricleLaser2
 		|PVP1
 		|PVP2
-	+pC
-		|PCCreateLinkStar
-		|PCCreateRandomStar
-		|PCP1
-	+p4
-	+p3
-		|P3CreateCircle
-		|P3CreateCircleArr
-	+pRest
-		|PRCreatePolygon
-		|PRCreateCircle
-		|PRCreateAsyncCircle
 +quickcalc functions
 	+QuickClac
 		+basic

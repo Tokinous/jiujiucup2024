@@ -8,7 +8,23 @@ DebugMusicPart(75.692);
 
 PRCreatePolygon();
 
+CameraRotate(VIEW_OPERATION_ROTATE_RESET);
+CameraRect(VIEW_OPERATION_RESET);
+
+with block instance_destroy();
+
+DrawBolcksDefault();
+
+with arcadeBg instance_destroy();
+with arcadeBgSquare instance_destroy();
+
+with colorManager instance_destroy();
+
+with pMPlayer instance_destroy();
+
 ParamChange(PARAM_CHANGE_TYPE_HITBOX, PLAYER_HITBOX_TYPE_DOTKID);
+
+screenFlash(4);
 
 instance_create(0, 0, pRBg);
 #define 81

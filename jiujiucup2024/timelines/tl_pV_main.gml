@@ -10,6 +10,7 @@ ParamChange(PARAM_CHANGE_TYPE_RESET);
 ParamChange(PARAM_CHANGE_TYPE_VISIBILITY, 0);
 
 BarrageColorChange(COLOR_CHANGE_TYPE_LINEAR, 0.5);
+CameraRect(VIEW_OPERATION_RESET);
 
 Polygon(player.x, player.y, 8, 16, 2, pVbHint, random(360));
 
