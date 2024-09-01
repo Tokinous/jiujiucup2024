@@ -13,8 +13,6 @@ CameraRect(VIEW_OPERATION_RESET);
 
 DrawBolcksDefault();
 
-CreateBackGround(c_blue, 24*4);
-
 with player
 {
     x = 400;

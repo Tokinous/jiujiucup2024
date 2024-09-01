@@ -150,9 +150,6 @@ else if(type == 1)
 {
     with p3bCircle
     {
-        //if(image_alpha >= 0)
-            //CreateMoveOne(x, y, p3bShadow, 48, point_direction(400, 304, x, y));
-
         instance_destroy();
     }
 

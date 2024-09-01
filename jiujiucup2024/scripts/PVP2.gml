@@ -1,31 +1,19 @@
 //PVP2(index)
-/*
+
 with pVbStop
 {
-    if(speed <= 0)
-    {
-        speed = tempSpd / 3;
-        direction = random(360);
-    }
+    speed = tempSpd * 1.75;
+    alarm[0] = 4;
 }
-*/
-
-Polygon(player.x, player.y, 8, 16, 2, pVbHint, random(360));
 
 var i, num;
-num = 5;
-i = argument0
-r = i * 48 + 128;
+num = 6;
 
-var initPhase;
-initPhase = (i mod 2) * 90;
+i = num -(argument0 + 1);
+offset = 64;
+PVCreateDelayLine(400, 608 / num * i, 0, -1);
 
-var j;
-for(j = 0; j < num; j += 1)
-{
-    var xx, yy;
-    xx = CalcCircleX(400, 304, r, num, j, initPhase);
-    yy = CalcCircleY(400, 304, r, num, j, initPhase);
-
-    Polygon(xx, yy, 4, 5.5, 6, pVbStop, point_direction(xx, yy, 400, 304));
-}
+Polygon(0 + offset, 608 / num * i, 4, 5.5, 24, pVbStop, 360 - 25 * i);
+Polygon(0 + offset, 608 / num * i, 4, 5.5, 4, pVbPub, 360 - 25 * i);
+Polygon(800 - offset, 608 / num * i, 4, 5.5, 24, pVbStop, 25 * i);
+Polygon(800 - offset, 608 / num * i, 4, 5.5, 4, pVbPub, 25 * i);

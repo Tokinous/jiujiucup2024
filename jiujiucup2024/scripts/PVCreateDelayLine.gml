@@ -38,8 +38,8 @@ for(i = 0; i < initNum; i += 1)
 
     var inst;
     inst = instance_create(xx, yy, pVbDelay);
-    //inst.alarm[0] = 12;
-    inst.alarm[1] = 12;
+    inst.alarm[0] = 12;
+    inst.alarm[1] = 23;
     inst.type = type;
     //inst.dir = dir + dirSpd*i;
     //inst.dir = random(360);

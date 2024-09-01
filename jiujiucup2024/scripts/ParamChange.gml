@@ -10,6 +10,22 @@ arg1 = argument2;
 
 switch(type)
 {
+    case PARAM_CHANGE_TYPE_NUMBER:
+        {
+            with player
+            {
+                infJump = false;
+                maxJumps = 2;
+                playerMoveType = PLAYER_MOVE_TYPE_DEFAULT;
+                slopeGravity = false;
+                invertControl = 0;
+                visible = 1;
+                dotkidMode = false;
+            }
+
+            CreateParamChangeNotice("PLAYER COUNT: " + string(value), 1);
+        }
+        break;
     case PARAM_CHANGE_TYPE_HITBOX:
         {
             with player
@@ -39,7 +55,7 @@ switch(type)
             else
                 strVisible = "DISABLE";
 
-            CreateParamChangeNotice("VISIBLE: " + strVisible);
+            CreateParamChangeNotice("VISIBLE: " + strVisible, 1);
         }
         break;
     case PARAM_CHANGE_TYPE_INVERT_CONTROL:
@@ -62,6 +78,7 @@ switch(type)
                 slopeGravity = false;
                 invertControl = 0;
                 visible = 1;
+                dotkidMode = false;
             }
 
             CreateParamChangeNotice("RESET");

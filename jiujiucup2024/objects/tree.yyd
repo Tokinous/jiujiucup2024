@@ -33,20 +33,17 @@
 			|p2bFollowView
 			|p2bFollowView2
 		+p3
-			|p3bCircle
 			|p3
-			|p3bShadow
+			|p3bCircle
 		+pvisible
 			|pV
-			|pVbCraw
 			|pVbDelay
 			|pVbPub
-			|pVbScaleMinus
 			|pVbEaseMove
 			|pVbLaser
-			|pVPlayerHinter
 			|pVbHint
 			|pVbStop
+			|pVbSpinLaser
 		+p4
 			|p4
 		+pmultiplayer

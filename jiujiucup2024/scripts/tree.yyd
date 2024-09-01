@@ -271,16 +271,15 @@
 		|P2CreateDiamondCircle
 		|P2MoveByDiscrete
 		|P2KickTheDanceFloor
-	|CreateBackGround
 	|BarrageColorManage
 	|BarrageColorChange
 	+pV
 		|PVCreateDelayLine
 		|PVMoveToSquare
 		|PVCreateLaser
+		|PVCreateLaser2
 		|PVCreateCricleLaser
-		|PVCreateLineStar
-		|PVCreateLineDot
+		|PVCreateCricleLaser2
 		|PVP1
 		|PVP2
 	+pC

@@ -475,11 +475,11 @@ p2bFollowView2
 arcadeBg
 arcadeBgSquare
 pV
-pVbCraw
+
 p4
 pVbDelay
 pVbPub
-pVbScaleMinus
+
 objTmp
 pVbEaseMove
 pVbLaser
@@ -491,8 +491,8 @@ pC
 pCbDelay
 pCbLaser
 p3bCircle
-p3bShadow
-pVPlayerHinter
+
+
 pVbHint
 pR
 pRbCross
@@ -503,3 +503,4 @@ pRbCurve
 pRbCircle2
 pRbAnchor
 pVbStop
+pVbSpinLaser
