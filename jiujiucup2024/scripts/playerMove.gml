@@ -122,7 +122,17 @@ if(global.frozen == false)
 
 if(slopeGravity)
 {
-    hspeed -= maxVspeed *(sin(degtorad(view_angle[0]))) / 1.25;
+    var tmpHspd;
+    tmpHspd = maxVspeed *(sin(degtorad(view_angle[0]))) / 1.25;
+    
+    if(hspeed >= 0 && tmpHspd <= 0)
+    {
+        hspeed -= tmpHspd;
+    }
+    if(hspeed <= 0 && tmpHspd >= 0)
+    {
+        hspeed -= tmpHspd;
+    }
 }
 
 //dotkid mode

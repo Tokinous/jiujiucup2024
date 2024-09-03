@@ -127,9 +127,11 @@ applies_to=self
 with player
 {
     MoveToGrid(32);
+
     x += 17;
     y += 23;
 }
+
 with p2bCircle
 {
     var inst;

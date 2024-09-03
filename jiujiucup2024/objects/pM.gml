@@ -16,8 +16,10 @@ applies_to=self
 */
 index = 0;
 
-//60, 20, 50, 90
-partOffset = choose(60, 20, 50, 90);
+//60, 90
+partOffset = choose(60, 0);
+
+//partOffset = random(360);
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1

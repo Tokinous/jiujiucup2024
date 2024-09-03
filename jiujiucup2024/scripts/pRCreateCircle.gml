@@ -2,7 +2,7 @@
 
 var num, initCenterX, initCenterY, initR;
 
-num = 64;
+num = 60;
 initCenterX = 400;
 initCenterY = 608 + 128;
 initR = 32;
