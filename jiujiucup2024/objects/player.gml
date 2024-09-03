@@ -110,7 +110,7 @@ switch(playerMoveType)
     case PLAYER_MOVE_TYPE_DISCRETE:
         {
             PlayerDiscreteMove();
-            playerShoot();
+            //playerShoot();
         }
         break;
     default:
@@ -273,10 +273,3 @@ applies_to=self
 */
 //kill yourself
 killPlayer();
-#define KeyPress_88
-/*"/*'/**//* YYD ACTION
-lib_id=1
-action_id=603
-applies_to=self
-*/
-curHP=maxHP;

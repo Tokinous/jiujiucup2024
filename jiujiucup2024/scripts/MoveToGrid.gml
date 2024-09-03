@@ -1,24 +1,30 @@
 //MoveToGrid(grid size, offset)
 
-var size, offset;
+var size, offset, tmpX, tmpY;
 
 size = argument0;
 offset = argument1;
 
+tmpX = x;
+tmpY = y;
+
 var nModAdd, nModMinus;
 
-nModAdd = x mod size;
+nModAdd = tmpX mod size;
 nModMinus = size - nModAdd;
 
 if(nModAdd < nModMinus)
-    x -= nModAdd + offset;
+    tmpX -= nModAdd + offset;
 else
-    x += nModMinus
+    tmpX += nModMinus
 
-nModAdd = y mod size;
+nModAdd = tmpY mod size;
 nModMinus = size - nModAdd;
 
 if(nModAdd < nModMinus)
-    y -= nModAdd + offset;
+    tmpY -= nModAdd + offset;
 else
-    y += nModMinus
+    tmpY += nModMinus
+
+x = tmpX;
+y = tmpY;

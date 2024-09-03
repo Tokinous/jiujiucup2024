@@ -16,6 +16,8 @@ applies_to=self
 */
 flag = 0;
 
+index = 0;
+
 //discrete move
 discreteTime = 0;
 alarm[1] = 0;
@@ -258,17 +260,22 @@ if(discreteTime > 0)
     discreteBorder -= 608 / discreteTime;
 }
 
-if(1 == outerCircle)
+index += 1;
+
+//if(index mod 2 == 0)
 {
-    var range;
-    range = 1000;
-    CreateMoveOne(random_range(-range, 800 + range), random_range(-96, -32), p2bFollowView, random_range(8, 16), 270 - view_angle[0]);
-}
-else if(2 == outerCircle)
-{
-    var range;
-    range = 1200;
-    CreateMoveOne(random_range(-range, 800 + range), random_range(-96, -32), p2bFollowView2, random_range(8, 16), 270 - view_angle[0]);
+    if(1 == outerCircle)
+    {
+        var range;
+        range = 1200;
+        CreateMoveOne(random_range(-range, 800 + range), random_range(-96, -32), p2bFollowView, random_range(8, 16), 270 - view_angle[0]);
+    }
+    else if(2 == outerCircle)
+    {
+        var range;
+        range = 1200;
+        CreateMoveOne(random_range(-range, 800 + range), random_range(-96, -32), p2bFollowView2, random_range(8, 16), 270 - view_angle[0]);
+    }
 }
 #define KeyPress_82
 /*"/*'/**//* YYD ACTION

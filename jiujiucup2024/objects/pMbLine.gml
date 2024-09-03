@@ -10,6 +10,14 @@ flag = 0;
 
 destX = 0;
 destY = 0;
+#define Alarm_0
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+flag = 1;
+SetScale(2, 2)
 #define Step_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -25,9 +33,11 @@ if(flag)
 
     if(image_xscale <= 0)
     {
-        instance_destroy();
+        image_alpha = 1;
+        flag = 0;
+        SetScale(1, 1);
     }
 }
 
-x += (destX - x)/10;
-y += (destY - y)/10;
+x += (destX - x)/3.5;
+y += (destY - y)/3.5;

@@ -6,6 +6,8 @@ applies_to=self
 */
 DebugMusicPart(75.692);
 
+ClearAllBrg();
+
 PRCreatePolygon();
 
 CameraRotate(VIEW_OPERATION_ROTATE_RESET);
@@ -153,6 +155,8 @@ action_id=603
 applies_to=self
 */
 PRCreateCircle();
+
+with pRBg flag = 1;
 #define 741
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -176,6 +180,6 @@ applies_to=self
 
 with pRbCircle2
 {
-    async = 1;
+    //async = 1;
     //asyncPhaseSpd = 0.25;
 }

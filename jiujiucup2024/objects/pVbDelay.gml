@@ -6,7 +6,7 @@ applies_to=self
 */
 dir = 0;
 
-image_alpha = 0.5;
+image_alpha = 0.3;
 
 SetScale(2.75, 2.75);
 
