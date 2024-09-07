@@ -52,7 +52,7 @@ if(room != rSelectStage && room != rOptions)
     }
 }
 
-maxHP = 10;
+maxHP = 100;
 curHP = maxHP;
 
 playerMoveType = PLAYER_MOVE_TYPE_DEFAULT;
@@ -69,6 +69,9 @@ dotkidMode = 0;
 
 //invert control
 invertControl = 0;
+
+//v6
+v6Vspeed = 0;
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -91,6 +94,7 @@ applies_to=self
 switch(playerMoveType)
 {
     case PLAYER_MOVE_TYPE_DEFAULT:
+    case PLAYER_MOVE_TYPE_V6:
         {
             ///Player movements
             if(global.frozen2 == 0)
@@ -111,6 +115,12 @@ switch(playerMoveType)
         {
             PlayerDiscreteMove();
             //playerShoot();
+        }
+        break;
+    case PLAYER_MOVE_TYPE_MOUSE:
+        {
+            x = mouse_x;
+            y = mouse_y;
         }
         break;
     default:
@@ -183,6 +193,11 @@ switch(playerMoveType)
 
         }
         break;
+    case PLAYER_MOVE_TYPE_V6:
+        {
+            v6Vspeed *= -1;
+        }
+        break;
     default:
         break;
 }
@@ -192,28 +207,36 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-///collision with platforms
-if(global.reverse == 0){
-    if(y-vspeed/2 <= other.y){
-        if(other.vspeed >= 0){
-            y = other.y-9;
-            vspeed = other.y-other.yprevious;
-            curJumps=1;
+switch(playerMoveType)
+{
+    case PLAYER_MOVE_TYPE_DEFAULT:
+        {
+            ///collision with platforms
+            if(global.reverse == 0){
+                if(y-vspeed/2 <= other.y){
+                    if(other.vspeed >= 0){
+                        y = other.y-9;
+                        vspeed = other.y-other.yprevious;
+                        curJumps=1;
+                    }
+                    onPlatform = 1;
+                    curJumps=1;
+                }
+            }
+            else{
+                if(y-vspeed/2 >= other.y+15){
+                    if(other.vspeed >= 0){
+                        y = other.y+24;
+                        vspeed = other.y-other.yprevious;
+                        curJumps=1;
+                    }
+                    onPlatform = 1;
+                    curJumps=1;
+                }
+            }
         }
-        onPlatform = 1;
-        curJumps=1;
-    }
-}
-else{
-    if(y-vspeed/2 >= other.y+15){
-        if(other.vspeed >= 0){
-            y = other.y+24;
-            vspeed = other.y-other.yprevious;
-            curJumps=1;
-        }
-        onPlatform = 1;
-        curJumps=1;
-    }
+    default:
+        break;
 }
 #define Other_4
 /*"/*'/**//* YYD ACTION

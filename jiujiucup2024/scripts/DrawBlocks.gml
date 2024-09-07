@@ -1,4 +1,4 @@
-// DrawBlock
+/// DrawBlock(x, y, horizonal / vertical (string H, V), num, special)
 // only for 32px block
 // x, y, horizonal / vertical (string H, V), num, special
 

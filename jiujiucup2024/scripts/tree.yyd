@@ -291,6 +291,7 @@
 		|PRCreatePolygon
 		|PRCreateCircle
 		|PRCreateAsyncCircle
+		|PRCreateLinkLaser
 	+pV
 		|PVCreateDelayLine
 		|PVMoveToSquare
@@ -300,6 +301,13 @@
 		|PVCreateCricleLaser2
 		|PVP1
 		|PVP2
+	+pCUrsor
+		|PCUCreateCircle
+		|PCUCreateArc
+		|PCUCreatePolySix
+		|PCUCreatePolySix2
+		|PCUCreatePolyArr
+		|PCUCreateLine
 +quickcalc functions
 	+QuickClac
 		+basic
@@ -309,6 +317,10 @@
 			|CalcCircleYAsync
 			|CalcLineY
 			|CalcLineX
+			|CalcColumnCircleX
+			|CalcColumnCircleY
 		+advanced
 			|CalcArcX
 			|CalcArcY
+	+QuickCreate
+		|ConvertCircleObjByPos

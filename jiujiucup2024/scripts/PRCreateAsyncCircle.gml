@@ -1,11 +1,13 @@
 //PRCreateAsyncCircle
 
+global.temp = irandom(4);
+
 with pRbCircle
 {
     var circleNum, rGap;
 
-    circleNum = 5;
-    rGap = 128;
+    circleNum = 7;
+    rGap = 120;
 
     var i;
 
@@ -24,13 +26,22 @@ with pRbCircle
         inst.destR = destR - ((circleNum - 1)/2) * rGap + i * rGap;
 
         inst.phase = phase;
-        inst.phaseSpd = phaseSpd * power(-1, i);
+        inst.phaseSpd = abs(phaseSpd) * power(-1, i);
 
         inst.destAsyncPhase = 15 * flag;
         inst.asyncPhaseSpd = 0.25 * (400 - r) / 200 * power(-1, i);
         inst.axisOffset = 2;
 
         inst.flag = flag;
+        inst.xoffFlag = power(-1, i);
+        inst.type = (r div 40 + i + 4 + global.temp) mod 4;
+
+        //if(id mod 60 == 0 && i >= 1 && i <= 3)
+        if(id mod 20 == 0)
+        {
+            inst.tag = 1;
+            inst.destScale = 2.5;
+        }
     }
 
     instance_destroy();

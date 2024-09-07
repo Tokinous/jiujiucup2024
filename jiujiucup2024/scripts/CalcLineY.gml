@@ -1,4 +1,4 @@
-//CalcLineX(originY, destY, num, i)
+///CalcLineX(originY, destY, num, i)
 
 var originY, destY, num, i;
 

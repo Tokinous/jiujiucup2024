@@ -12,6 +12,9 @@ barrageColorH = irandom_range(BARRAGE_COLOR_H_MIN, BARRAGE_COLOR_H_MAX);
 barrageColorS = 32;
 barrageColorV = 100;
 
+barrageColorHMax = BARRAGE_COLOR_H_MAX;
+barrageColorHMin = BARRAGE_COLOR_H_MIN;
+
 barrageColor = c_white;
 
 barrageColorHChangeType = COLOR_CHANGE_TYPE_NONE;
@@ -32,7 +35,7 @@ if(barrageColorEnable)
             {
                 barrageColorH += barrageColorHChangeSpeed * barrageColorHChangeFlag;
 
-                if(barrageColorH > BARRAGE_COLOR_H_MAX || barrageColorH < BARRAGE_COLOR_H_MIN)
+                if(barrageColorH > barrageColorHMax || barrageColorH < barrageColorHMin)
                 {
                     barrageColorHChangeFlag *= -1;
                 }

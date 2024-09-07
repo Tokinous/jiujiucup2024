@@ -372,3 +372,15 @@ PMP1
 PMCreateCircleArr
 PMP2
 PMSquareLine
+CalcColumnCircleX
+
+CalcColumnCircleY
+PRCreateLinkLaser
+
+PCUCreateCircle
+PCUCreateArc
+PCUCreatePolySix
+ConvertCircleObjByPos
+PCUCreatePolySix2
+PCUCreatePolyArr
+PCUCreateLine

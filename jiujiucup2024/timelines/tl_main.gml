@@ -72,3 +72,12 @@ applies_to=self
 with pM instance_destroy();
 
 instance_create(0, 0, pR);
+#define 6000
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+with pR instance_destroy();
+
+instance_create(0, 0, pCursor);

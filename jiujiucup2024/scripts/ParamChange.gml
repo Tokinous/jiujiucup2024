@@ -10,6 +10,16 @@ arg1 = argument2;
 
 switch(type)
 {
+    case PARAM_CHANGE_TYPE_MOUSE_INPUT:
+        {
+            with player
+            {
+                playerMoveType = PLAYER_MOVE_TYPE_MOUSE;
+            }
+
+            CreateParamChangeNotice("INPUT: MOUSE");
+        }
+        break;
     case PARAM_CHANGE_TYPE_NUMBER:
         {
             with player
@@ -79,6 +89,7 @@ switch(type)
                 invertControl = 0;
                 visible = 1;
                 dotkidMode = false;
+                mask_index = maskPlayer;
             }
 
             CreateParamChangeNotice("RESET");
@@ -141,6 +152,19 @@ switch(type)
             }
 
             CreateParamChangeNotice("ERROR: DISCRETE");
+        }
+        break;
+    case PARAM_CHANGE_TYPE_V6:
+        {
+            with player
+            {
+                vspeed = 0;
+                gravity = 0;
+                playerMoveType = PLAYER_MOVE_TYPE_V6;
+                v6Vspeed = value;
+            }
+
+            CreateParamChangeNotice("VVVVVV");
         }
         break;
     default:

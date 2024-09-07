@@ -1,4 +1,4 @@
-//CalcCircleX(centerX, centerY, radium, total number, number, init offset)
+/// CalcCircleX(centerX, centerY, radium, totalnumber, number, initoffset)
 //return X;
 
 var xx, cX, cY, r, total, num, offset;

@@ -12,6 +12,7 @@ destCenterY = 0;
 
 r = 0;
 destR = 0;
+rFlag = 0;
 
 phase = 0;
 phaseSpd = 0;
@@ -28,6 +29,17 @@ asyncPhase = 0;
 destAsyncPhase = 0;
 asyncPhaseSpd = 0;
 axisOffset = 0;
+
+xoff = 1;
+xoffFlag = -1;
+
+type  = 0;
+async = 1;
+
+scale = 1;
+destScale = 1;
+
+des = 0;
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -56,12 +68,68 @@ easeParam = 50;
 centerX += (destCenterX - centerX)/(easeParam / 3);
 centerY += (destCenterY - centerY)/(easeParam / 3);
 
-r += (destR - r)/easeParam;
+if(rFlag)
+    r += (destR - r)/easeParam;
+else
+    r += (destR / 2 - r)/easeParam;
 
 phase += phaseSpd;
 
-x = CalcCircleXAsync(centerX, centerY, r, 1, 1, phase, asyncPhase);
-y = CalcCircleYAsync(centerX, centerY, r, 1, 1, phase, asyncPhase);
+if(tag && !des)
+{
+    scale += (destScale - scale) / 100;
+    SetScale(scale, scale);
+}
+
+switch(type)
+{
+    case 0:
+        {
+            var xoffScale;
+            xoffScale = cos(degtorad(xoff));
+
+            x = CalcColumnCircleX(centerX, centerY, r, 1, 1, xoffScale, phase);
+            y = CalcColumnCircleY(centerX, centerY, r, 1, 1, xoffScale, phase);
+
+            //xoff += xoffFlag * 0.01;
+
+            //if(xoff < -1 || xoff > 1)
+            //    xoffFlag *= -1;
+
+            xoff += 1 * xoffFlag;
+        }
+        break;
+    case 1:
+        {
+            var xoffScale;
+            xoffScale = -cos(degtorad(xoff));
+
+            y = CalcColumnCircleX(centerY, centerX, r, 1, 1, xoffScale, phase);
+            x = CalcColumnCircleY(centerY, centerX, r, 1, 1, xoffScale, phase);
+
+            //xoff += xoffFlag * 0.01;
+
+            //if(xoff < -1 || xoff > 1)
+            //    xoffFlag *= -1;
+
+            xoff += 1 * xoffFlag;
+        }
+        break;
+    case 2:
+        {
+            x = CalcCircleXAsync(centerX, centerY, r, 1, 1, phase, asyncPhase);
+            y = CalcCircleYAsync(centerX, centerY, r, 1, 1, phase, asyncPhase);
+        }
+        break;
+    case 3:
+        {
+            y = CalcCircleXAsync(centerY, centerX, r, 1, 1, phase, asyncPhase);
+            x = CalcCircleYAsync(centerY, centerX, r, 1, 1, phase, asyncPhase);
+        }
+        break;
+    default:
+        break;
+}
 
 lastX = x;
 lastY = y;
@@ -75,4 +143,13 @@ if(async)
         destAsyncPhase = asyncPhase;
         asyncPhase += asyncPhaseSpd;
     }
+}
+
+if(des)
+{
+    image_alpha = 0.3;
+    scale += (-0.75 - scale) / 10;
+    SetScale(scale, scale);
+    if(scale <= 0)
+        instance_destroy();
 }
