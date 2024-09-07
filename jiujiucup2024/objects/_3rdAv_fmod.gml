@@ -4,6 +4,8 @@ lib_id=1
 action_id=603
 applies_to=self
 */
+showDebugMsg = 0;
+
 maxNum = 0;
 if(instance_number(all) > maxNum)
     maxNum = instance_number(all);
@@ -149,26 +151,30 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-draw_set_color(c_yellow);
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
-draw_set_font(fontDefault);
-draw_set_alpha(1);
+if(showDebugMsg)
+{
 
-draw_text_transformed(
-    view_xview[0] + 48,
-    view_yview[0] + 48,
-    _curStep + _playerHP + _maxInstNum + _instNum + _playerX + _playerY,
-    view_wview[0]/800,
-    view_hview[0]/608,
-    0
-);
+    draw_set_color(c_yellow);
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_top);
+    draw_set_font(fontDefault);
+    draw_set_alpha(1);
 
-draw_text_transformed(
-    view_xview[0] + 48,
-    view_yview[0] + 48 + 32,
-    _cameraInfo + _curFps + _barrageColor,
-    view_wview[0]/800,
-    view_hview[0]/608,
-    0
-);
+    draw_text_transformed(
+        view_xview[0] + 48,
+        view_yview[0] + 48,
+        _curStep + _playerHP + _maxInstNum + _instNum + _playerX + _playerY,
+        view_wview[0]/800,
+        view_hview[0]/608,
+        0
+    );
+
+    draw_text_transformed(
+        view_xview[0] + 48,
+        view_yview[0] + 48 + 32,
+        _cameraInfo + _curFps + _barrageColor,
+        view_wview[0]/800,
+        view_hview[0]/608,
+        0
+    );
+}

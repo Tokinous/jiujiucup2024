@@ -41,6 +41,7 @@ with TokinousCamera
             {
                 //apply
                 viewAdj = VIEW_OPERATION_RESET;
+
             }
             break;
         case VIEW_OPERATION_SCALE_STATIC:

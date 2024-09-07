@@ -506,3 +506,12 @@ pVbStop
 pVbSpinLaser
 pMbCricle
 pMbLine
+pRFrontGFadeIn
+pRbLaser
+pCHelper
+pCursor
+pCbCircle
+pCUAnchor
+pCUbScale
+pCUbLine
+pCUbLine2

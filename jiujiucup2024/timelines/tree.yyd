@@ -17,3 +17,5 @@
 		|tl_pR_main
 	+pM
 		|tl_pM_main
+	+pCursor
+		|tl_pCursor_main

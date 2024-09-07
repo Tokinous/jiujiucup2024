@@ -62,6 +62,9 @@ var diamondNum, diamondI;
 diamondNum = 5;
 diamondI = 0;
 
+var flagOffset;
+flagOffset = choose(0, 1);
+
 for(circleI = 1; circleI <= circleNum; circleI += 1)
 {
     var  circleFlag;
@@ -81,9 +84,9 @@ for(circleI = 1; circleI <= circleNum; circleI += 1)
 
             var inst;
             inst = instance_create(400, 304, p2bCircle);
-            inst.phase = phase + 180 * power(-1, circleI + 1);
+            inst.phase = phase + 180 * power(-1, circleI + 1 + flagOffset);
             inst.destPhase = phase;
-            inst.phaseSpd = (1.5 - circleI * 1 / circleNum) * power(-1, circleI);
+            inst.phaseSpd = (1.5 - circleI * 1 / circleNum) * power(-1, circleI + flagOffset);
             inst.r = 0;
             inst.destR = scale;
 

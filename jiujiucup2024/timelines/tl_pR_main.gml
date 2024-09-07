@@ -180,6 +180,119 @@ applies_to=self
 
 with pRbCircle2
 {
-    //async = 1;
-    //asyncPhaseSpd = 0.25;
+    rFlag = 1;
+    xoffFlag *= -1;
+    asyncPhaseSpd *= -1;
 }
+#define 1454
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+instance_create(0, 0, pRFrontGFadeIn);
+#define 1477
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+instance_create(0, 0, colorManager);
+
+with pRbCircle2
+{
+    if(image_xscale <= 1)
+    {
+        image_alpha = 0.3;
+    }
+
+    phaseSpd *= 1.25;
+    asyncPhaseSpd *= 1.25;
+    xoffFlag *= 1.25;
+}
+
+BarrageColorChange(COLOR_CHANGE_TYPE_LINEAR, 0.5);
+
+var objBg;
+objBg = instance_create(0, 0, arcadeBg);
+objBg.t = 13;
+objBg.alarm[0] = 1;
+
+screenFlash(6);
+
+with block instance_destroy();
+
+DrawBlocks(-32, 0, BLOCK_DRAW_DIRECTION_HORIZONAL, 30);
+
+DrawBlocks(-32, 608 - 32, BLOCK_DRAW_DIRECTION_HORIZONAL, 30);
+
+ParamChange(PARAM_CHANGE_TYPE_RESET);
+
+ParamChange(PARAM_CHANGE_TYPE_V6, -(608 - 32 - 11 - (32 + 10)) / 46);
+
+with player
+{
+    y = 608 - 32 - 11;
+}
+
+//alarm[0] = 23;
+#define 1846
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+with arcadeBg t = 6;
+
+//ParamChange(PARAM_CHANGE_TYPE_V6, -(608 - 32 - 11 - (32 + 10)) / 23);
+
+screenShake(2031 - 1846, 2, 2);
+
+t = 23;
+#define 2031
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+with arcadeBg t = 3;
+
+screenShake(2123 - 2031, 4, 4);
+#define 2123
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+with arcadeBg instance_destroy();
+
+with pRbCircle2 des = 1;
+
+instance_create(0, 0, pCHelper);
+
+CameraRect(VIEW_OPERATION_SCALE_LINEAR_DECREASE, 0.25, -0.05);
+#define 2158
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+//ParamChange(PARAM_CHANGE_TYPE_MOUSE_INPUT);
+#define 2181
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+ParamChange(PARAM_CHANGE_TYPE_MOUSE_INPUT);
+
+with pCHelper instance_destroy();
+#define 2192
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+var inst;
+inst = instance_create(0, 0, pRFrontGFadeIn);
+inst.lastTime = -1;

@@ -34,6 +34,8 @@ viewRotateType = 0;
 destViewRotate = 0;
 viewRotateEaseParam = 0;
 viewRotateSpeed = 0;
+
+with camera instance_destroy();
 #define Step_2
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -56,6 +58,15 @@ switch(viewAdj)
             view_yview[0] = 0;
             view_wview[0] = 800;
             view_hview[0] = 608;
+
+            viewScale = 1;
+            destViewScale = 1;
+
+            viewX = 0;
+            viewY = 0;
+
+            viewH = 608;
+            viewW = 800;
 
             viewAdj = VIEW_OPERATION_NONE;
         }

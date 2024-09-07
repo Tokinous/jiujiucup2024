@@ -52,13 +52,23 @@
 			|pCbLaser
 		+pRest
 			|pR
-			|pRbCross
-			|pRBg
+			|pRbAnchor
 			|pRbCircle
 			|pRbCircle2
-			|pRbAnchor
-			|pRbPub
+			|pRbCross
 			|pRbCurve
+			|pRBg
+			|pRbLaser
+			|pRbPub
+			|pRFrontGFadeIn
+		+pCursor
+			|pCbCircle
+			|pCHelper
+			|pCUAnchor
+			|pCUbLine
+			|pCUbLine2
+			|pCUbScale
+			|pCursor
 	|brgbase
 	|fmodmusicTemplate
 	|mainTemplate

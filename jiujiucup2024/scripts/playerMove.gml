@@ -147,3 +147,14 @@ if(invertControl)
 {
     hspeed *= -1;
 }
+
+//v6
+if(playerMoveType == PLAYER_MOVE_TYPE_V6)
+{
+    vspeed = v6Vspeed;
+    
+    if(vspeed > 0)
+        image_yscale = 1;
+    else
+        image_yscale = -1;
+}
