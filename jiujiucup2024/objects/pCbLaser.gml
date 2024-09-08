@@ -5,28 +5,27 @@ action_id=603
 applies_to=self
 */
 image_xscale = 65536;
-image_yscale = 0;
+image_yscale = 0.01;
 
-alarm[0] = 23;
+image_alpha = 0.3;
+
+destYScale = 0.5;
+
+alarm[0] = 6;
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-flag = 1;
-image_yscale = 1.25;
-image_angle = point_direction(x, y, 400, 304);
+visible = 0;
 #define Step_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-if(flag)
-{
-    image_yscale += (-0.75 - image_yscale) / 15;
+image_yscale += (destYScale - image_yscale) / 8;
 
-    if(image_yscale <= 0)
-        instance_destroy();
-}
+if(image_yscale <= 0)
+    instance_destroy();

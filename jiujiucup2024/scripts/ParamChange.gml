@@ -102,6 +102,10 @@ switch(type)
                 visible = 1;
                 dotkidMode = false;
                 mask_index = maskPlayer;
+                image_angle = 0;
+                grav = 0.4;
+                gravity = 0.4;
+                noneGrav = 0;
             }
 
             CreateParamChangeNotice("RESET");
@@ -177,6 +181,23 @@ switch(type)
             }
 
             CreateParamChangeNotice("VVVVVV");
+        }
+        break;
+    case PARAM_CHANGE_TYPE_CENTER_MOVE:
+        {
+            with player
+            {
+                hspeed = 0;
+                vspeed = 0;
+                gravity = 0;
+                playerMoveType = PLAYER_MOVE_TYPE_ROTATE_CENTER;
+                r = 128;
+                phase = 270;
+                yflag = -1;
+                infJump = false;
+            }
+
+            CreateParamChangeNotice("GRAVITY: TO CENTER", 1);
         }
         break;
     default:

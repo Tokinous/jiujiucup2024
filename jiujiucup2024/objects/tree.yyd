@@ -47,6 +47,9 @@
 			|pC
 			|pCbDelay
 			|pCbLaser
+			|pCAnchor
+			|pCbPub
+			|pCGbCircle
 		+pRest
 			|pR
 			|pRbAnchor
@@ -71,6 +74,8 @@
 			|pNGbEase
 			|pNGbPub
 			|pNGbScale
+		+pLast
+			|pLast
 	|brgbase
 	|fmodmusicTemplate
 	|mainTemplate

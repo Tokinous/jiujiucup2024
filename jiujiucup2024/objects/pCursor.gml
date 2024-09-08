@@ -21,7 +21,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-PCUCreateCircle(index * 47);
+PCUCreateCircle(index * power(1.12, index) * 32);
 
 index += 1;
 
@@ -38,7 +38,7 @@ with (pCUbLine2)
     instance_destroy();
 }
 
-PCUCreateLine(index * 110);
+PCUCreateLine(index * 100);
 
 index += 1;
 

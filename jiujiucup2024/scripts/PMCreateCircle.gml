@@ -1,4 +1,4 @@
-//PMCreateCircle(center x, center y, num, dest r, offset, flag, tag)
+///PMCreateCircle(center x, center y, num, dest r, offset, flag, tag)
 
 var centerX, centerY, destR;
 
