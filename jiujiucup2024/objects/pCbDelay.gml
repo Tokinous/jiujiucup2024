@@ -6,13 +6,13 @@ applies_to=self
 */
 dir = 0;
 
-image_alpha = 0.5;
+image_alpha = 0.3;
 
 SetScale(2.75, 2.75);
-
+scale = 2.75
 destScale = 1;
 
-alarm[0] = 23;
+alarm[0] = 12;
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -28,10 +28,10 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-image_xscale += (destScale - image_xscale) / 10;
-image_yscale += (destScale - image_yscale) / 10;
+scale += (destScale - scale) / 10;
+SetScale(scale, scale);
 
-if(image_xscale <= 0)
+if(scale <= 0)
 {
     instance_destroy();
 }

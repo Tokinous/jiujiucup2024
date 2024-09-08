@@ -21,6 +21,7 @@
 		|r_pCU
 		|r_pNoneGrav
 		|r_pR
+		|r_pLast
 |rTemplate
 +endingrooms
 	|rEnd2

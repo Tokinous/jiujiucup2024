@@ -1,4 +1,4 @@
-//PMCreateCircleArr(centerX, centerY, destR, offset, flag, tag)
+///PMCreateCircleArr(centerX, centerY, destR, offset, flag, tag)
 
 var centerX, centerY, destR, offset;
 

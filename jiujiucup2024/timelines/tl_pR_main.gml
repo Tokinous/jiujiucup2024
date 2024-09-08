@@ -293,6 +293,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
+/*
 var inst;
 inst = instance_create(0, 0, pRFrontGFadeIn);
 inst.lastTime = -1;

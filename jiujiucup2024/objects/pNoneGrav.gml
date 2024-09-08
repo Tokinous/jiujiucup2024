@@ -274,6 +274,10 @@ applies_to=self
 */
 ds_list_destroy(list3rdAvX);
 ds_list_destroy(list3rdAvY);
+
+with objShadow instance_destroy();
+
+with pNGbScale instance_destroy();
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -326,7 +330,7 @@ with pNGbEase
         var inst;
         inst = CreateMoveOne(x, y, pNGbScale, random_range(1, 8), 270);
 
-        if(inst mod 10 == 0)
+        if(inst mod 4 == 0)
             inst.destScale = -0.5;
 
         instance_destroy();

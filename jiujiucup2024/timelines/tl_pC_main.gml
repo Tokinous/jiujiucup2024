@@ -4,74 +4,101 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-DebugMusicPart(142.153);
+DebugMusicPart(134.769);
 
-CameraRect(VIEW_OPERATION_SCALE_STATIC, 1.5);
+//debug
+if(room == r_pC)
+{
+    instance_create(0, 0, colorManager);
+    BarrageColorChange(COLOR_CHANGE_TYPE_LINEAR, 0.5);
 
+    var objBg;
+    objBg = instance_create(0, 0, arcadeBg);
+    objBg.t = 46;
+    objBg.alarm[0] = 1;
+}
+
+//CameraRect(VIEW_OPERATION_SCALE_STATIC, 1.25);
 screenFlash(12);
 with block instance_destroy();
+ParamChange(PARAM_CHANGE_TYPE_CENTER_MOVE);
 
-PCP1();
-#define 23
+alarm[0] = 23;
+#define 137
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-PCP1();
-#define 46
+alarm[0] = 0;
+#define 138
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-PCP1();
-#define 69
-/*"/*'/**//* YYD ACTION
-lib_id=1
-action_id=603
-applies_to=self
-*/
-PCP1();
-#define 92
-/*"/*'/**//* YYD ACTION
-lib_id=1
-action_id=603
-applies_to=self
-*/
-PCP1();
-#define 115
-/*"/*'/**//* YYD ACTION
-lib_id=1
-action_id=603
-applies_to=self
-*/
-PCP1();
-#define 139
-/*"/*'/**//* YYD ACTION
-lib_id=1
-action_id=603
-applies_to=self
-*/
-PCP1();
+PCGOuterCircle(128 + 16, 48, 1);
 #define 150
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-PCP1();
-#define 161
+PCGOuterCircle(256 + 64, 128, -1);
+#define 162
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-//PCCreateLinkStar(irandom_range(7, 11), random_range(256 + 128, 256 + 256), irandom_range(2, 5), 32, point_direction(400, 304, player.x, player.y), pCbDelay);
-
-with pCbDelay
+with pCGbCircle
 {
-    alarm[0] = 1;
+    image_alpha = 1;
+    shadow = 1;
+    des = 1;
+    destR = r - 64;
+    destPhase = phase + 128 * flag;
 }
 
-screenShake(4, 16, 16);
+screenShake(4, 8, 8);
+
+with pCbPub instance_destroy();
+#define 208
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+alarm[1] = 1;
+#define 323
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+alarm[1] = 0;
+
+var i;
+
+for(i = 0; i < 5; i += 1)
+{
+    PCGOuterCircle(96 * i + 16, 32 + i * 10, power(-1, i));
+}
+#define 346
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+with pCGbCircle
+{
+    instance_create(x, y, pCUbScale);
+    instance_destroy();
+}
+
+with pCbPub instance_destroy();
+
+ParamChange(PARAM_CHANGE_TYPE_RESET);
+screenShake(4, 8, 8);
+
+instance_destroy();

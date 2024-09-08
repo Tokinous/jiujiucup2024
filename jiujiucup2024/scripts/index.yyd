@@ -384,3 +384,10 @@ ConvertCircleObjByPos
 PCUCreatePolySix2
 PCUCreatePolyArr
 PCUCreateLine
+PlayerCenterMove
+PlayerCenterJump
+PlayerCenterShoot
+PCCreateLaser
+PCCreateCricleLaser
+PCP2
+PCGOuterCircle

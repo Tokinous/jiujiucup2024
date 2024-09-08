@@ -19,7 +19,7 @@ for(i = 0; i < angleCount; i += 1)
     xx = CalcCircleX(400, 304, r, angleCount, i, offset);
     yy = CalcCircleY(400, 304, r, angleCount, i, offset);
 
-    temp = instance_create(xx, yy, pCbLaser);
+    temp = instance_create(xx, yy, pCAnchor);
 
     ds_list_add(listObj, temp);
 }

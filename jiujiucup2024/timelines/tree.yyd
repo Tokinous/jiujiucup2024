@@ -7,8 +7,6 @@
 		|tl_p2_main
 	+pVisible
 		|tl_pV_main
-	+p4
-		|tl_p4_main
 	+pC
 		|tl_pC_main
 	+p3
@@ -21,3 +19,5 @@
 		|tl_pCursor_main
 	+pNoneGravity
 		|tl_pNonGrav_main
+	+pLast
+		|tl_pLast_main

@@ -98,4 +98,13 @@ applies_to=self
 */
 with pNoneGrav instance_destroy();
 
-//instance_create(0, 0, pC);
+instance_create(0, 0, pC);
+#define 7108
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+with pC instance_destroy();
+
+instance_create(0, 0, pLast);

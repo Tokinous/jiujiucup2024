@@ -26,6 +26,8 @@ if(room == r_pCU)
 
 }
 
+screenFlash(12);
+
 CameraRect(VIEW_OPERATION_RESET);
 
 with block instance_destroy();

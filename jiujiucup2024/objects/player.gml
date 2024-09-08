@@ -52,7 +52,7 @@ if(room != rSelectStage && room != rOptions)
     }
 }
 
-maxHP = 10;
+maxHP = 20;
 curHP = maxHP;
 
 playerMoveType = PLAYER_MOVE_TYPE_DEFAULT;
@@ -78,6 +78,16 @@ noneGrav = 0;
 
 //center grav
 centerGrav = 0;
+
+centerX = 400;
+centerY = 304;
+r = 0;
+rSpd = 0;
+rGrav = 0.4;
+maxRSpd = 4;
+phase = 0;
+phaseSpd = 0;
+maxPSpd = 3;
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -97,11 +107,6 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-if(centerGrav)
-{
-    gravity_direction = point_direction(x, y, 300, 304);
-}
-
 switch(playerMoveType)
 {
     case PLAYER_MOVE_TYPE_DEFAULT:
@@ -132,6 +137,12 @@ switch(playerMoveType)
         {
             x = mouse_x;
             y = mouse_y;
+        }
+        break;
+    case PLAYER_MOVE_TYPE_ROTATE_CENTER:
+        {
+            PlayerCenterMove();
+            PlayerCenterShoot();
         }
         break;
     default:

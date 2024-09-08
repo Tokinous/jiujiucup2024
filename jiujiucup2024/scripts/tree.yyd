@@ -1,14 +1,17 @@
 +player
 	|killPlayer
-	|playerMove
-	|playerWallJump
-	|playerJump
-	|playerShoot
-	|playerReverse
-	|playerSlope
-	|playerMisc
 	|outsideRoom
 	|outsideView
+	|PlayerCenterJump
+	|PlayerCenterMove
+	|playerJump
+	|playerMisc
+	|playerMove
+	|playerReverse
+	|playerShoot
+	|PlayerCenterShoot
+	|playerSlope
+	|playerWallJump
 	+special move
 		|PlayerDiscreteMove
 +system
@@ -276,11 +279,14 @@
 	+p3
 		|P3CreateCircle
 		|P3CreateCircleArr
-	+p4
 	+pC
 		|PCCreateLinkStar
 		|PCCreateRandomStar
 		|PCP1
+		|PCP2
+		|PCCreateLaser
+		|PCCreateCricleLaser
+		|PCGOuterCircle
 	+pM
 		|PMCreateCircle
 		|PMCreateCircleArr

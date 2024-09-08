@@ -6,7 +6,7 @@ centerY = argument1;
 
 var polyR, polyNum, index;
 
-polyR = ( 800 / 5 - 52 ) / sqrt(3);
+polyR = ( 800 / 5 - 64 ) / sqrt(3);
 polyNum = 6;
 
 index = argument2;
@@ -16,8 +16,8 @@ listAnchors = ds_list_create();
 
 var numEachLine, lackNum;
 
-numEachLine = 12;
-lackNum = 6;
+numEachLine = 14;
+lackNum = 8;
 
 var i;
 
