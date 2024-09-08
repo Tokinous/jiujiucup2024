@@ -38,8 +38,16 @@ with (pCUbLine2)
     instance_destroy();
 }
 
-PCUCreateLine(index * 100);
+PCUCreateLine(index * 110);
 
 index += 1;
 
 alarm[1] = 23;
+#define Step_0
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+if(instance_number(player) == 0)
+    instance_destroy();

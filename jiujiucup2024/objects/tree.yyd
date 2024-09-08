@@ -38,14 +38,11 @@
 			|pVbHint
 			|pVbStop
 			|pVbSpinLaser
-		+p4
-			|p4
 		+pmultiplayer
 			|pM
 			|pMPlayer
 			|pMbCricle
 			|pMbLine
-		+pVVVVVV
 		+pCenterGravity
 			|pC
 			|pCbDelay
@@ -69,6 +66,11 @@
 			|pCUbLine2
 			|pCUbScale
 			|pCursor
+		+pNoneGravity
+			|pNoneGrav
+			|pNGbEase
+			|pNGbPub
+			|pNGbScale
 	|brgbase
 	|fmodmusicTemplate
 	|mainTemplate
@@ -120,6 +122,7 @@
 	|titleButton
 	|menuSelect
 	|menuSelect2
+	|getdown
 +savePoint
 	|savePointMedium
 	|savePoint

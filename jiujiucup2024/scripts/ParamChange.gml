@@ -10,6 +10,17 @@ arg1 = argument2;
 
 switch(type)
 {
+    case PARAM_CHANGE_TYPE_GRAVITY:
+        {
+            with player
+            {
+                noneGrav = 1;
+                infJump = 1;
+            }
+
+            CreateParamChangeNotice("GRAVITY: NONE");
+        }
+        break;
     case PARAM_CHANGE_TYPE_MOUSE_INPUT:
         {
             with player
@@ -31,6 +42,7 @@ switch(type)
                 invertControl = 0;
                 visible = 1;
                 dotkidMode = false;
+                noneGrav = 0;
             }
 
             CreateParamChangeNotice("PLAYER COUNT: " + string(value), 1);

@@ -117,7 +117,7 @@ if(global.frozen == false)
         playerJump();
     if(global.enable_jump_cancel && keyboard_check_released(global.jumpbutton) && yflag*vspeed < 0){
         vspeed *= 0.45;
-    }
+    }    
 }
 
 if(slopeGravity)
@@ -157,4 +157,11 @@ if(playerMoveType == PLAYER_MOVE_TYPE_V6)
         image_yscale = 1;
     else
         image_yscale = -1;
+}
+
+//none grav
+if(noneGrav)
+{
+    if(vspeed > 0)
+        vspeed = 0;
 }

@@ -1,3 +1,3 @@
-text = 'pCursor'
+text = 'Cursor'
 
 roomTo = r_pCU;
