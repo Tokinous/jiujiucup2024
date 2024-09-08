@@ -81,3 +81,21 @@ applies_to=self
 with pR instance_destroy();
 
 instance_create(0, 0, pCursor);
+#define 6369
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+with pCursor instance_destroy();
+
+instance_create(0, 0, pNoneGrav);
+#define 6738
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+with pNoneGrav instance_destroy();
+
+//instance_create(0, 0, pC);

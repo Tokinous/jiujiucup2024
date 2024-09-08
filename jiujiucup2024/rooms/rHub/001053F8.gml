@@ -1,2 +1,2 @@
-text = "pR";
+text = "Rest";
 roomTo = r_pR;

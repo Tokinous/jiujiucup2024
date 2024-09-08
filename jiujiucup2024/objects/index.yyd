@@ -476,7 +476,7 @@ arcadeBg
 arcadeBgSquare
 pV
 
-p4
+
 pVbDelay
 pVbPub
 
@@ -515,3 +515,8 @@ pCUAnchor
 pCUbScale
 pCUbLine
 pCUbLine2
+pNoneGrav
+getdown
+pNGbEase
+pNGbPub
+pNGbScale

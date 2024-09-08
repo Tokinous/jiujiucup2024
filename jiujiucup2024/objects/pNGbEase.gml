@@ -1,19 +1,20 @@
 #define Create_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
-action_id=305
+action_id=603
 applies_to=self
-invert=0
-arg0=tl_p1_sub
-arg1=0
-arg2=0
-arg3=0
 */
+destX = 0;
+destY = 0;
+
+SetScale(0.8, 0.8);
+
+alarm[0] = 10;
 #define Step_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-if(instance_number(player) == 0)
-    instance_destroy();
+x += (destX - x) / 10;
+y += (destY - y) / 10;

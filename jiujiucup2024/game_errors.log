@@ -1,9 +1,8 @@
 ERROR in
 action number 1
-of Alarm Event for alarm 0
-for object pM:
+at time step 139
+of time line tl_p1_sub:
 
-In script PMP1:In script PMCreateCircle:In script CalcCircleX:Error in code at line 18:   
-phase = offset + 360 / total * num;                          ^at position 25: Division by 0.
+Data structure with index does not exist.
 
 

@@ -1,4 +1,4 @@
-//CreateMoveOne(x,y,obj,spd,dir)
+///CreateMoveOne(x,y,obj,spd,dir)
 
 var inst;
 inst=instance_create(argument0,argument1,argument2);

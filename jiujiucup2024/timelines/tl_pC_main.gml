@@ -8,7 +8,8 @@ DebugMusicPart(142.153);
 
 CameraRect(VIEW_OPERATION_SCALE_STATIC, 1.5);
 
-BarrageColorChange(COLOR_CHANGE_TYPE_LINEAR, 0.5);
+screenFlash(12);
+with block instance_destroy();
 
 PCP1();
 #define 23
