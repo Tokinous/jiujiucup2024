@@ -177,7 +177,6 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-
 with pRbCircle2
 {
     rFlag = 1;
@@ -209,6 +208,8 @@ with pRbCircle2
     phaseSpd *= 1.25;
     asyncPhaseSpd *= 1.25;
     xoffFlag *= 1.25;
+
+    destR *= 1.5;
 }
 
 BarrageColorChange(COLOR_CHANGE_TYPE_LINEAR, 0.5);

@@ -330,9 +330,11 @@ with pNGbEase
         var inst;
         inst = CreateMoveOne(x, y, pNGbScale, random_range(1, 8), 270);
 
-        if(inst mod 4 == 0)
+        if(inst mod 3 == 0)
+        {
             inst.destScale = -0.5;
-
+            inst.speed = 0;
+        }
         instance_destroy();
     }
 }

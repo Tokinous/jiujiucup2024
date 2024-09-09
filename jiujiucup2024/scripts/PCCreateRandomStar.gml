@@ -21,10 +21,13 @@ for(i = 0; i < angleCount; i += 1)
     yy = CalcCircleY(400, 304, r, 1, 1, offset);
 
     temp = instance_create(xx, yy, pCAnchor);
+    temp.alarm[0] = 0;
 
     ds_list_add(listObj, temp);
 }
 
 CreateLineDots(listObj, lineNum, obj, step);
+
+with pCAnchor instance_destroy();
 
 ds_list_destroy(listObj);

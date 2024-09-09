@@ -1,7 +1,8 @@
-//PMP2(index)
+///PMP2(index, alarm)
 
-var index ;
+var index, timer;
 index = argument0;
+timer = argument1;
 
 var xx, yy, i, inst, offset, num;
 
@@ -37,7 +38,7 @@ for(j = 0; j < 4; j += 1)
     x2get = ds_list_find_value(linelistX, (j + 1) mod 4);
     y2get = ds_list_find_value(linelistY, (j + 1) mod 4);
 
-    PMSquareLine(x1get, y1get, x2get, y2get, num);
+    PMSquareLine(x1get, y1get, x2get, y2get, num, timer);
 }
 
 ds_list_destroy(linelistX);

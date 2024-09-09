@@ -5,7 +5,7 @@
     global.first_stage = rHub;
     //lite mode (set to true for convenient testing & debugging, set to false when you want release your game)
     //tips : load less music for faster loading
-    global.lite_mode = true;
+    global.lite_mode = false;
     //if we want to stream music, music volume will be decreased after player's death, but it will not be paused.
     //as a result, the loading of music files will be extremely fast.
     global.stream_music = false;

@@ -1,4 +1,4 @@
-if(room!=rAvoidance)
+if(room != rAvoidance && room != r20HP)
 {
 var fmod;
 fmod=instance_create(0,0,_3rdAv_fmod);

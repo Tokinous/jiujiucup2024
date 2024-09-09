@@ -9,7 +9,7 @@ DebugMusicPart(68.307);
 BarrageColorChange(COLOR_CHANGE_TYPE_LINEAR, 0.5);
 
 //debug
-if(room != rAvoidance)
+if(room != rAvoidance && room != r20HP)
 {
     var objBg;
     objBg = instance_create(0, 0, arcadeBg);

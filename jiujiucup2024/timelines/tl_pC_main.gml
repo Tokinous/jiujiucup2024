@@ -82,7 +82,7 @@ var i;
 
 for(i = 0; i < 5; i += 1)
 {
-    PCGOuterCircle(96 * i + 16, 32 + i * 10, power(-1, i));
+    PCGOuterCircle(96 * i + 16, 32 + i * 32, power(-1, i));
 }
 #define 346
 /*"/*'/**//* YYD ACTION
