@@ -1,12 +1,14 @@
-//PMSquareLine(initX, initY, destX, destY, num)
+///PMSquareLine(initX, initY, destX, destY, num, timer)
 
-var initX, initY, destX, destY;
+var initX, initY, destX, destY, timer;
 
 initX = argument0;
 initY = argument1;
 
 destX = argument2;
 destY = argument3;
+
+timer = argument4;
 
 var num, i, range;
 
@@ -25,5 +27,8 @@ for(i = 0; i <= num; i += 1)
     inst = instance_create(initX, initY, pMbLine);
     inst.destX = CalcLineX(initX, destX, num, i);
     inst.destY = CalcLineY(initY, destY, num, i);
-    inst.alarm[0] = 346 - 277;
+    if(!timer)
+        inst.alarm[0] = 346 - 277;
+    else
+        inst.alarm[0] = timer;
 }

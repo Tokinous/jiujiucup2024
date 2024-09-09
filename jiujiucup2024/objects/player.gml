@@ -52,8 +52,16 @@ if(room != rSelectStage && room != rOptions)
     }
 }
 
-maxHP = 20;
-curHP = maxHP;
+if(room != rAvoidance)
+{
+    maxHP = 20;
+    curHP = maxHP;
+}
+else
+{
+    maxHP = 1;
+    curHP = maxHP;
+}
 
 playerMoveType = PLAYER_MOVE_TYPE_DEFAULT;
 

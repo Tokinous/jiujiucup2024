@@ -21,7 +21,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-PCUCreateCircle(index * power(1.12, index) * 32);
+PCUCreateCircle(index * power(1.25, index) * 32, index);
 
 index += 1;
 

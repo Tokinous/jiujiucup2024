@@ -48,7 +48,6 @@ for(i = 0; i < polyNum; i += 1)
 
         if(i == polyNum - 1)
         {
-            /*
             if(j < numEachLine / 2 - lackNum / 2 || j > numEachLine / 2 + lackNum / 2)
             {
                 var inst;
@@ -63,10 +62,9 @@ for(i = 0; i < polyNum; i += 1)
             }
             else
             {
-
+                continue;
             }
-            */
-            continue;
+
         }
         else
         {
