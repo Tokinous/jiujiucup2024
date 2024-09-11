@@ -1,21 +1,6 @@
-#define Create_0
-/*"/*'/**//* YYD ACTION
-lib_id=1
-action_id=305
-applies_to=self
-invert=0
-arg0=tl_pNonGrav_main
-arg1=0
-arg2=0
-arg3=0
-*/
-/*"/*'/**//* YYD ACTION
-lib_id=1
-action_id=603
-applies_to=self
-*/
-list3rdAvX = ds_list_create();
-list3rdAvY = ds_list_create();
+instance_create(0, 0, colorManager);
+
+BarrageColorChange(COLOR_CHANGE_TYPE_LINEAR, 0.75);
 
 var xx, yy;
 
@@ -257,101 +242,5 @@ xx[233] = 752; yy[233] = 384;
 var i;
 for(i = 0; i < 234; i += 1)
 {
-    ds_list_add(list3rdAvX, xx[i]);
-    ds_list_add(list3rdAvY, yy[i]);
+    instance_create(xx[i], yy[i], p2bPub);
 }
-/*"/*'/**//* YYD ACTION
-lib_id=1
-action_id=603
-applies_to=self
-*/
-index = 0;
-#define Destroy_0
-/*"/*'/**//* YYD ACTION
-lib_id=1
-action_id=603
-applies_to=self
-*/
-ds_list_destroy(list3rdAvX);
-ds_list_destroy(list3rdAvY);
-
-with objShadow instance_destroy();
-
-with pNGbScale instance_destroy();
-#define Alarm_0
-/*"/*'/**//* YYD ACTION
-lib_id=1
-action_id=603
-applies_to=self
-*/
-
-if(index mod 2 == 0)
-    alarm[0] = 11;
-else
-    alarm[0] = 12;
-
-//alarm[0] = 23;
-
-var i;
-for(i = 0; i < 234; i += 1)
-{
-    if(i mod 10 != index)
-        continue;
-
-    var xx, yy, inst;
-    xx = ds_list_find_value(list3rdAvX, i);
-    yy = ds_list_find_value(list3rdAvY, i);
-
-    inst = instance_create(xx, 0, pNGbEase);
-    inst.destX = xx;
-    inst.destY = yy;
-}
-
-index += 1;
-index = index mod 10;
-#define Alarm_1
-/*"/*'/**//* YYD ACTION
-lib_id=1
-action_id=603
-applies_to=self
-*/
-var modNum;
-modNum = 6;
-
-if(index mod 2 == 0)
-    alarm[1] = 12;
-else
-    alarm[1] = 11;
-
-with pNGbEase
-{
-    if(id mod 6 == other.index)
-    {
-        var inst;
-        inst = CreateMoveOne(x, y, pNGbScale, random_range(1, 8), 270);
-
-        if(inst mod 2 == 0)
-        {
-            inst.destScale = -0.5;
-            inst.speed = 0;
-        }
-        instance_destroy();
-    }
-}
-
-index += 1;
-#define Step_0
-/*"/*'/**//* YYD ACTION
-lib_id=1
-action_id=603
-applies_to=self
-*/
-if(instance_number(player) == 0)
-    instance_destroy();
-#define KeyPress_82
-/*"/*'/**//* YYD ACTION
-lib_id=1
-action_id=203
-applies_to=self
-invert=0
-*/

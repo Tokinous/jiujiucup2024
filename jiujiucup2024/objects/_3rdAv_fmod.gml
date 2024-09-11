@@ -4,7 +4,8 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-showDebugMsg = 0;
+/*
+showDebugMsg = 1;
 
 maxNum = 0;
 if(instance_number(all) > maxNum)
@@ -89,7 +90,7 @@ applies_to=self
 */
 global.STEP=realtime;
 realtime+=1;
-
+/*
 _curStep = 'CurStep[' + string(round(global.STEP)) + ']';
 _isPlaying = ' IsPlaying[' + string(FMODInstanceIsPlaying(global.BGMHandler)) + ']';
 
@@ -151,6 +152,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
+/*
 if(showDebugMsg)
 {
 

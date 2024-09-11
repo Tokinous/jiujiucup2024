@@ -104,3 +104,12 @@ screenFlash(23 * 4);
 DrawBlocks(-32, 608 - 32, BLOCK_DRAW_DIRECTION_HORIZONAL, 30);
 with arcadeBg instance_destroy();
 with arcadeBgSquare instance_destroy();
+
+if(room == rAvoidance)
+{
+    var objwarp;
+    objwarp = instance_create(400 - 16, 608 - 128 - 16, warp);
+    objwarp.roomTo = rEnd;
+}
+
+instance_destroy();

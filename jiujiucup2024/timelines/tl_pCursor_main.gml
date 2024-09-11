@@ -10,7 +10,7 @@ if(room == r_pCU)
 {
     with block instance_destroy();
     instance_create(0, 0, colorManager);
-    window_mouse_set(400, 304);
+    window_views_mouse_set(400, 304);
     ParamChange(PARAM_CHANGE_TYPE_MOUSE_INPUT);
     BarrageColorChange(COLOR_CHANGE_TYPE_LINEAR, 0.5);
 
@@ -88,8 +88,8 @@ applies_to=self
 */
 PCUCreatePolyArr();
 
-window_mouse_set(400, 12);
-Polygon(400, 12, 32, 24, 2, pVbHint, random(360));
+window_views_mouse_set(400, 100);
+Polygon(400, 100, 32, random_range(20, 30), 2, pVbHint, random(360));
 #define 208
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -137,3 +137,11 @@ with pCUbScale image_alpha = 0.35;
 ParamChange(PARAM_CHANGE_TYPE_RESET);
 
 DrawBlocks(-32, 608 - 12, BLOCK_DRAW_DIRECTION_HORIZONAL, 30);
+
+with player
+{
+    x = 400;
+    y = 608 - 64;
+}
+
+Polygon(400, 608 - 64, 32, random_range(20, 30), 2, pVbHint, random(360));

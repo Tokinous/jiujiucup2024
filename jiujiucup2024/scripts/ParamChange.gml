@@ -43,6 +43,7 @@ switch(type)
                 visible = 1;
                 dotkidMode = false;
                 noneGrav = 0;
+                visibleFlag = 1;
             }
 
             CreateParamChangeNotice("PLAYER COUNT: " + string(value), 1);
@@ -69,6 +70,7 @@ switch(type)
             with player
             {
                 visible = value;
+                visibleFlag = value;
             }
 
             var strVisible;
@@ -106,6 +108,7 @@ switch(type)
                 grav = 0.4;
                 gravity = 0.4;
                 noneGrav = 0;
+                visibleFlag = 1;
             }
 
             CreateParamChangeNotice("RESET");

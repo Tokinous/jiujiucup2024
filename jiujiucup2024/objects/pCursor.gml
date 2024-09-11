@@ -32,6 +32,7 @@ lib_id=1
 action_id=603
 applies_to=self
 */
+/*
 with (pCUbLine2)
 {
     instance_create(x, y, pCUbScale);
@@ -39,8 +40,12 @@ with (pCUbLine2)
 }
 
 PCUCreateLine(index * 100);
+*/
+
 
 index += 1;
+
+CreateMoveOne(800 * (index mod 2), player.y, pCbShadow, 16, 180 * ((index ) mod 2));
 
 alarm[1] = 23;
 #define Step_0

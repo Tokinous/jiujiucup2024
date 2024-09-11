@@ -274,14 +274,16 @@ index += 1;
     if(1 == outerCircle)
     {
         var range;
-        range = 1200;
-        CreateMoveOne(random_range(-range, 800 + range), random_range(-96, -32), p2bFollowView, random_range(8, 16), 270 - view_angle[0]);
+        range = 1400;
+        //CreateMoveOne(random_range(-range, 800 + range), random_range(-96, -32), p2bFollowView, random_range(8, 16), 270 - view_angle[0]);
+        CreateMoveOne(random_range(-range, 800 + range), random_range(-96, -32), p2bPub2, random_range(8, 12), 270);
     }
     else if(2 == outerCircle)
     {
         var range;
-        range = 1200;
-        CreateMoveOne(random_range(-range, 800 + range), random_range(-96, -32), p2bFollowView2, random_range(8, 16), 270 - view_angle[0]);
+        range = 1600;
+        //CreateMoveOne(random_range(-range, 800 + range), random_range(-96, -32), p2bFollowView2, random_range(8, 16), 270 - view_angle[0]);
+        CreateMoveOne(random_range(-range, 800 + range), random_range(-96, -32), p2bPub2, random_range(8, 12), 270);
     }
 }
 #define KeyPress_82

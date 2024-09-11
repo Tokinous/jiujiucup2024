@@ -19,7 +19,7 @@ tmpMouseY = mouse_y;
 tmpMouseX += (400 - tmpMouseX) / 10;
 tmpMouseY += (304 - tmpMouseY) / 10;
 
-window_mouse_set(tmpMouseX, tmpMouseY);
+window_views_mouse_set(tmpMouseX, tmpMouseY);
 
 with player
 {

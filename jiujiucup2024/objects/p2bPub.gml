@@ -1,7 +1,7 @@
-#define Other_40
+#define Step_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
-action_id=203
+action_id=603
 applies_to=self
-invert=0
 */
+DestroyByDistance(550);

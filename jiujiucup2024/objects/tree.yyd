@@ -24,6 +24,7 @@
 			|p2bCircle
 			|p2bDiscreteBorder
 			|p2bPub
+			|p2bPub2
 			|p2bFollowView
 			|p2bFollowView2
 		+p3
@@ -61,6 +62,7 @@
 			|pRbLaser
 			|pRbPub
 			|pRFrontGFadeIn
+			|pRbGrav
 		+pCursor
 			|pCbCircle
 			|pCHelper
@@ -69,6 +71,7 @@
 			|pCUbLine2
 			|pCUbScale
 			|pCursor
+			|pCbShadow
 		+pNoneGravity
 			|pNoneGrav
 			|pNGbEase

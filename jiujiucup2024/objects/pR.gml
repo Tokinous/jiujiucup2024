@@ -15,6 +15,9 @@ action_id=603
 applies_to=self
 */
 t = 46;
+
+flag = 0;
+range = 64;
 #define Destroy_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -50,3 +53,11 @@ applies_to=self
 */
 if(instance_number(player) == 0)
     instance_destroy();
+
+if(flag)
+{
+    var inst;
+    inst = CreateMoveOne(choose(random_range(0, range), random_range(800 - range, 800)), 608, p2bPub, random(8), 90);
+    inst.gravity = 0.4;
+    inst.gravity_direction = 90;
+}

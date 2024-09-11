@@ -28,6 +28,6 @@ if(!flag)
 else
     recordX += (destRecordX - recordX) / 10;
 
-scale += (0.75 - scale) / 10;
+scale += (0.5 - scale) / 10;
 
 SetScale(scale, scale);

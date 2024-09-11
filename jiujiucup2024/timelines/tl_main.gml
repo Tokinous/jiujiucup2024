@@ -108,3 +108,11 @@ applies_to=self
 with pC instance_destroy();
 
 instance_create(0, 0, pLast);
+#define 7500
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+
+instance_destroy();

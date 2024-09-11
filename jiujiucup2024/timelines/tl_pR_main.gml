@@ -209,7 +209,7 @@ with pRbCircle2
     asyncPhaseSpd *= 1.25;
     xoffFlag *= 1.25;
 
-    destR *= 1.5;
+    destR *= 2.35;
 }
 
 BarrageColorChange(COLOR_CHANGE_TYPE_LINEAR, 0.5);
@@ -236,6 +236,7 @@ with player
     y = 608 - 32 - 11;
 }
 
+flag = 1;
 //alarm[0] = 23;
 #define 1846
 /*"/*'/**//* YYD ACTION
@@ -247,7 +248,7 @@ with arcadeBg t = 6;
 
 //ParamChange(PARAM_CHANGE_TYPE_V6, -(608 - 32 - 11 - (32 + 10)) / 23);
 
-screenShake(2031 - 1846, 2, 2);
+screenShake(2031 - 1846, 6, 6);
 
 t = 23;
 #define 2031
@@ -258,13 +259,17 @@ applies_to=self
 */
 with arcadeBg t = 3;
 
-screenShake(2123 - 2031, 4, 4);
+range = 128;
+
+screenShake(2123 - 2031, 10, 10);
 #define 2123
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
+flag = 0;
+
 with arcadeBg instance_destroy();
 
 with pRbCircle2 des = 1;

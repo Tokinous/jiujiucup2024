@@ -7,5 +7,6 @@
     saveExe();
 
     //resize screen
-    window_set_rectangle(global.initWindowX, global.initWindowY, 800, 608);
+    //window_set_rectangle(global.initWindowX, global.initWindowY, 800, 608);
+    //window_center();
 }

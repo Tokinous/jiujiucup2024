@@ -6,7 +6,7 @@ centerY = argument1;
 
 var polyR, polyNum, index;
 
-polyR = ( 800 / 5 - 64 ) / sqrt(3);
+polyR = ( 800 / 5 - 8 ) / sqrt(3);
 polyNum = 6;
 
 index = argument2;

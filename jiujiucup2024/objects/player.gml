@@ -65,6 +65,9 @@ else
 
 playerMoveType = PLAYER_MOVE_TYPE_DEFAULT;
 
+//visible
+visibleFlag = 1;
+
 //discrete move
 discreteIdleCount = 0;
 discreteIdleInterrupt = 24;
@@ -295,10 +298,8 @@ lib_id=1
 action_id=603
 applies_to=self
 */
-/*
-if(place_meeting(x,y,roomChanger) == false){
-    killPlayer();
-}
+x = 400;
+y = 304;
 #define Draw_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -317,7 +318,8 @@ if(dotkidMode)
     draw_set_alpha(1);
 }
 
-draw_self();
+if(visibleFlag)
+    draw_self();
 #define KeyPress_81
 /*"/*'/**//* YYD ACTION
 lib_id=1
