@@ -37,7 +37,7 @@ with pRbCircle
         inst.type = (r div 40 + i + 4 + global.temp) mod 4;
 
         //if(id mod 60 == 0 && i >= 2 && i <= 4)
-        if(id mod 20 == 0 &&  i >= 1 && i <= 3)
+        if(id mod 14 == 0 &&  i >= 1 && i <= 3)
         {
             inst.tag = 1;
             inst.destScale = 2.5;

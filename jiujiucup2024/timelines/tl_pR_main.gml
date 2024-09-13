@@ -200,11 +200,12 @@ instance_create(0, 0, colorManager);
 
 with pRbCircle2
 {
-    if(image_xscale <= 1)
+    if(image_xscale > 1)
     {
-        image_alpha = 0.3;
+        alarm[1] = 1;
     }
 
+    image_alpha = 0.3;
     phaseSpd *= 1.25;
     asyncPhaseSpd *= 1.25;
     xoffFlag *= 1.25;

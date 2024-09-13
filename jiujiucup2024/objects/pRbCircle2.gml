@@ -40,6 +40,7 @@ scale = 1;
 destScale = 1;
 
 des = 0;
+fullFlag = 0;
 #define Alarm_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -53,6 +54,36 @@ inst = CreateMoveOne(x, y, pRbCurve, 2, phase);
 inst.curve = 0.25 * flag;
 
 flag *= -1;
+#define Alarm_1
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+alarm[1] = 23;
+alarm[2] = 12;
+
+if(fullFlag >= 4)
+    image_alpha = 1;
+else
+    image_alpha = 0.6;
+
+fullFlag += 1;
+#define Alarm_2
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+image_alpha += (0.3 - image_alpha)/5;
+alarm[2] = 1;
+#define Alarm_3
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+image_alpha = 0.8;
 #define Step_2
 /*"/*'/**//* YYD ACTION
 lib_id=1
