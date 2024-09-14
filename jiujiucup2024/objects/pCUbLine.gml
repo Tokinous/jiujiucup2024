@@ -12,6 +12,23 @@ destRecordX = 0;
 
 scale = 2;
 SetScale(scale, scale);
+#define Alarm_0
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+scale = 2;
+image_alpha = 1;
+alarm[1] = 23;
+//alarm[0] = 23 * 3;
+#define Alarm_1
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+image_alpha = 0.3;
 #define Step_0
 /*"/*'/**//* YYD ACTION
 lib_id=1

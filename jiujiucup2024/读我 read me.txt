@@ -1,0 +1,33 @@
+============================
+
+游戏信息
+Game Information
+
+引擎:果 v1.43
+Engine:Nikaple v1.43
+
+使用工具: Gamemaker v8.2; Barrage Maker;
+tools: Gamemaker v8.2; Barrage Maker;
+
+BGM: Sound Souler - 3rd Avenue (From BOF 2016)
+
+制作: Tokinous
+Creator: Tokinous
+
+特别感谢: 七之大七 - 游戏测试 & （很多）建议
+Special Thanks: bigseven - game test and some (a lot of) advice
+
+希望喜欢！
+Hope u like it!
+_(:3 」∠)_
+
+24.09.1
+
+=============================
+更新日志：
+24.09.1
+
+
+
+
+

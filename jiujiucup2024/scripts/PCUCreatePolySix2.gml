@@ -6,7 +6,7 @@ centerY = argument1;
 
 var polyR, polyNum, index;
 
-polyR = ( 800 / 5 - 8 ) / sqrt(3);
+polyR = ( 800 / 5 - 10 ) / sqrt(3);
 polyNum = 6;
 
 index = argument2;
@@ -16,7 +16,7 @@ listAnchors = ds_list_create();
 
 var numEachLine, lackNum;
 
-numEachLine = 14;
+numEachLine = 16;
 lackNum = 8;
 
 var i;
@@ -55,6 +55,8 @@ for(i = 0; i < polyNum; i += 1)
             inst = instance_create(xx, yy, pCUbLine);
             inst.xSpeed = 2 * power(-1, index);
             inst.recordX = xx;
+            inst.image_alpha = 0.3;
+            inst.alarm[0] = 23 * ((i + 6) mod 6 + 2);
         }
     }
 }

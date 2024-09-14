@@ -119,6 +119,11 @@ with pCUbLine
         destRecordX = recordX + 1600;
     else
         destRecordX = recordX - 1600;
+
+    alarm[0] = 0;
+    alarm[1] = 0;
+
+    image_alpha = 1;
 }
 #define 346
 /*"/*'/**//* YYD ACTION
