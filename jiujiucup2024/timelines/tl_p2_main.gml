@@ -56,6 +56,8 @@ applies_to=self
 CameraRotate(VIEW_OPERATION_ROTATE_EASE, 180, 10);
 
 outerCircle = 2;
+
+with p2bPub2 instance_destroy();
 #define 369
 /*"/*'/**//* YYD ACTION
 lib_id=1
@@ -109,6 +111,8 @@ with arcadeBg instance_destroy();
 
 with p2bFollowView instance_destroy();
 with p2bFollowView2 instance_destroy();
+
+with p2bPub2 instance_destroy();
 #define 1085
 /*"/*'/**//* YYD ACTION
 lib_id=1
