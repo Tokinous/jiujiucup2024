@@ -22,13 +22,22 @@ applies_to=self
 SetScale(2.75, 2.75);
 destScale = -0.1;
 image_alpha = 1;
+
+alarm[1] = 6;
+#define Alarm_1
+/*"/*'/**//* YYD ACTION
+lib_id=1
+action_id=603
+applies_to=self
+*/
+image_alpha = 0.8;
 #define Step_0
 /*"/*'/**//* YYD ACTION
 lib_id=1
 action_id=603
 applies_to=self
 */
-scale += (destScale - scale) / 10;
+scale += (destScale - scale) / 5;
 SetScale(scale, scale);
 
 if(scale <= 0)

@@ -59,7 +59,11 @@ if(room != rAvoidance)
 }
 else
 {
-    maxHP = 1;
+    if(global.difficulty == 0)
+        maxHP = 2;
+    else
+        maxHP = 1;
+
     curHP = maxHP;
 }
 

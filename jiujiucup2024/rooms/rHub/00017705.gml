@@ -1,2 +1,2 @@
-text = "3rd Avenue";
+text = "main";
 roomTo = rAvoidance;
